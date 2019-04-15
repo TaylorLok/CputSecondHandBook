@@ -1,10 +1,10 @@
-package za.co.cput.ac.Projects.domain;
+package za.co.cput.ac.Projects.Userdomain;
 
 public class User
 {
     private String name;
     private String surname;
-    private String studentNumber;
+    private int studentNumber;
 
 
     private User(){}
@@ -26,7 +26,7 @@ public class User
         return surname;
     }
 
-    public String getStudentNumber()
+    public int getStudentNumber()
     {
         return studentNumber;
     }
@@ -35,7 +35,7 @@ public class User
     {
         private String name;
         private String surname;
-        private String studentNumber;
+        private int studentNumber;
 
 
         public Builder name(String name)
@@ -50,9 +50,9 @@ public class User
             return this;
         }
 
-        public Builder studentNumber(String studentNumber)
+        public Builder studentNumber(int studentNumber)
         {
-            this.name = studentNumber;
+            this.studentNumber = studentNumber;
             return this;
         }
 

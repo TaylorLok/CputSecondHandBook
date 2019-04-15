@@ -1,10 +1,10 @@
-package za.co.cput.ac.Projects.Factory;
+package za.co.cput.ac.Projects.UserFactory;
 
-import za.co.cput.ac.Projects.domain.User;
+import za.co.cput.ac.Projects.Userdomain.User;
 
 public class UserFactory
 {
-    public static User getUser(String name,String surname, String studentNumber)
+    public static User getUser(String name,String surname, int studentNumber)
     {
         return new User.Builder()
                 .name(name)
