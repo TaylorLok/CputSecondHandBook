@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/Factory/BuyFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/Factory/SellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/Factory/UserFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/domain/Buy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/domain/Sell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/domain/User$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/za/co/cput/ac/Projects/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/za/co/cput/ac/Projects/Factory/UserFactoryTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,23 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/cput/ac/Projects/Userdomain/UserLogin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="392">
-                <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -170,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555357485163" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555447545069" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -256,7 +235,7 @@
       <updated>1554891968939</updated>
       <workItem from="1554892055807" duration="3176000" />
       <workItem from="1555341430849" duration="5791000" />
-      <workItem from="1555424414999" duration="8252000" />
+      <workItem from="1555424414999" duration="8765000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
@@ -272,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555441795205</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Taking it to the next level :)">
+      <created>1555447005719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555447005719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -285,15 +271,17 @@
     <history-entry file="UserFactoryTest_getUser - 2019.04.15 at 17h 51m 50s.xml">
       <configuration name="UserFactoryTest.getUser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserFactoryTest_getUser - 2019.04.16 at 22h 33m 01s.xml">
+      <configuration name="UserFactoryTest.getUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17219000" />
+    <option name="totallyTimeSpent" value="17732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15431164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15431164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -329,7 +317,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="still going" />
-    <option name="LAST_COMMIT_MESSAGE" value="still going" />
+    <MESSAGE value="Taking it to the next level :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Taking it to the next level :)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/cput/ac/Projects/domain/Buy.java" />
@@ -348,13 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/cput/ac/Projects/Userdomain/UserLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -400,10 +382,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="392">
+          <first_editor relative-caret-position="595">
             <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/cput/ac/Projects/Userdomain/UserLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
