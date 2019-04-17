@@ -7,7 +7,7 @@ the books that are on sale.<br>
 <br>
 ## Solution to solve the problem <br>
 <br>
-As junior programmer, i am attempting to develop an 
+As a junior programmer, i am attempting to develop an 
 application for the CPUT community, so that they can 
 Advertise their second hand books for sell and being 
 contacted by the customer or buyer who is interested.<br>
