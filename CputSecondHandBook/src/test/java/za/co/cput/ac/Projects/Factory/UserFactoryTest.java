@@ -15,6 +15,14 @@ public class UserFactoryTest {
     @Test
     public void getUser()
     {
-        Assert.assertEquals("Taylor","lokombe");
+        String name ="Taylor";
+        String surname ="Lokombe";
+        int studentNumber = 214291324;
+
+        User user = UserFactory.getUser(name,surname,studentNumber);
+        System.out.println(user);
+        Assert.assertNotNull(((User) user).getName());
+
+        //Assert.assertEquals("Taylor","lokombe");
     }
 }
