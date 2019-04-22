@@ -1,6 +1,6 @@
 package Domain;
 
-public class UserLogin
+public class UserRating
 {
 
 }

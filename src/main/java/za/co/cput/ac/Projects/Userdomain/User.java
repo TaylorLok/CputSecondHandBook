@@ -1,19 +1,32 @@
-package za.co.cput.ac.Projects.Userdomain;
+package Domain;
 
 public class User
 {
+
     private String name;
     private String surname;
-    private int studentNumber;
+    private String studentNumber;
+    private long telNumber;
 
+    public User(String name, String surname, String studentNumber, long telNumber)
+    {
+        this.name = name;
+        this.surname = surname;
+        this.studentNumber = studentNumber;
+        this.telNumber = telNumber;
+    }
 
-    private User(){}
+    protected User()
+    {
+
+    }
 
     public User(Builder builder)
     {
         this.name = builder.name;
         this.surname = builder.surname;
         this.studentNumber = builder.studentNumber;
+        this.telNumber = builder.telNumber;
     }
 
     public String getName()
@@ -26,17 +39,22 @@ public class User
         return surname;
     }
 
-    public int getStudentNumber()
+    public String getStudentNumber()
     {
         return studentNumber;
+    }
+
+    public long getTelNumber()
+    {
+        return telNumber;
     }
 
     public static class Builder
     {
         private String name;
         private String surname;
-        private int studentNumber;
-
+        private String studentNumber;
+        private long telNumber;
 
         public Builder name(String name)
         {
@@ -50,9 +68,15 @@ public class User
             return this;
         }
 
-        public Builder studentNumber(int studentNumber)
+        public Builder studentNumber(String studentNumber)
         {
             this.studentNumber = studentNumber;
+            return this;
+        }
+
+        public Builder telNumber(long telNumber)
+        {
+            this.telNumber = telNumber;
             return this;
         }
 
@@ -61,4 +85,11 @@ public class User
             return new User(this);
         }
     }
+
+    public void ViewBook()
+    {
+        System.out.println("Available Book is ");
+    }
+
+
 }
