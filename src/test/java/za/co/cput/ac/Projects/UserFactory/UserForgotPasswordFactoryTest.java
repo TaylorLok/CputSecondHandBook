@@ -6,7 +6,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class UserForgotPasswordFactoryTest {
+public class UserForgotPasswordFactoryTest
+{
+
 
     @Before
     public void setUp() throws Exception {
@@ -17,6 +19,8 @@ public class UserForgotPasswordFactoryTest {
     }
 
     @Test
-    public void getUserPassword() {
+    public void getUserPassword()
+    {
+
     }
 }
