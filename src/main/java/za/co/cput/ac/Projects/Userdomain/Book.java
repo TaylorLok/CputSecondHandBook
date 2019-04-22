@@ -1,16 +1,16 @@
 package Domain;
 
-public class Book implements IBook
+public abstract class Book implements IBook
 {
 
     private String bookTitle;
     private String bookDescription;
-    private int bookPrice;
+    private Double bookPrice;
     private String publisher;
     private  String publicationDate;
     private String bookLanguage;
 
-    protected Book()
+    public Book()
     {
 
     }
@@ -35,7 +35,7 @@ public class Book implements IBook
         return bookDescription;
     }
 
-    public int getBookPrice()
+    public Double getBookPrice()
     {
         return bookPrice;
     }
@@ -59,7 +59,7 @@ public class Book implements IBook
     {
         private String bookTitle;
         private String bookDescription;
-        private int bookPrice;
+        private Double bookPrice;
         private String publisher;
         private  String publicationDate;
         private String bookLanguage;
@@ -76,7 +76,7 @@ public class Book implements IBook
             return this;
         }
 
-        public Builder bookPrice(int bookPrice)
+        public Builder bookPrice(Double bookPrice)
         {
             this.bookPrice = bookPrice;
             return this;
@@ -102,7 +102,72 @@ public class Book implements IBook
 
         public Book build()
         {
-            return new Book(this);
+            return new Book(this)
+            {
+                @Override
+                public String getInformationTech()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getManagement()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getCommerce() {
+                    return null;
+                }
+
+                @Override
+                public String getMarketing() {
+                    return null;
+                }
+
+                @Override
+                public String getProjectManagement()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getDptOfAppliedScience()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getDptOfInformDesign()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getDptOfEngineering()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getDptOfEducation()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getDptOfBusiness()
+                {
+                    return null;
+                }
+
+                @Override
+                public String getDptOfHealth()
+                {
+                    return null;
+                }
+            };
         }
     }
 

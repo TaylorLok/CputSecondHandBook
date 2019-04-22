@@ -11,7 +11,8 @@ public class UserSeller extends User
     private Date advertDate;
     private Date expireDate;
 
-    public UserSeller(String name, String surname, String studentNumber, long telNumber, String bookDesc, String bookTitle, int price, Date advertDate, Date expireDate) {
+    public UserSeller(String name, String surname, String studentNumber, long telNumber, String bookDesc, String bookTitle, int price, Date advertDate, Date expireDate)
+    {
         super(name, surname, studentNumber, telNumber);
         this.bookDesc = bookDesc;
         this.bookTitle = bookTitle;
@@ -22,7 +23,8 @@ public class UserSeller extends User
     }
 
 
-    public UserSeller(Builder builder, String bookDesc, String bookTitle, int price, Date advertDate, Date expireDate) {
+    public UserSeller(Builder builder, String bookDesc, String bookTitle, int price, Date advertDate, Date expireDate)
+    {
         super(builder);
         this.bookDesc = bookDesc;
         this.bookTitle = bookTitle;
@@ -54,5 +56,11 @@ public class UserSeller extends User
     public Date getExpireDate()
     {
         return expireDate;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "UserSeller{" + "bookDesc='" + bookDesc + '\'' + ", bookTitle='" + bookTitle + '\'' + ", price=" + price + ", advertDate=" + advertDate + ", expireDate=" + expireDate + '}';
     }
 }

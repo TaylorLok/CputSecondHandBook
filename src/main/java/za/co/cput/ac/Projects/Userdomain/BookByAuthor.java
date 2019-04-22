@@ -1,11 +1,11 @@
 package Domain;
 
-public class BookByAuthor extends Book
+public abstract class BookByAuthor extends Book
 {
     private String name;
     private String Bio;
 
-    private BookByAuthor()
+    public BookByAuthor()
     {
 
     }
