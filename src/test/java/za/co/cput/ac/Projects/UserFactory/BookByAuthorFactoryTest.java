@@ -24,13 +24,11 @@ public class BookByAuthorFactoryTest
     {
        BookByAuthorFactory bookAuthor = new BookByAuthorFactory()
        {
-           @Override
            public String getName()
            {
                return null;
            }
 
-           @Override
            public String getBio()
            {
                return null;
