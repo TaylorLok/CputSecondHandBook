@@ -1,17 +1,15 @@
 package Domain;
 
 
-import java.util.Date;
-
 public class UserSeller extends User
 {
     private String bookDesc;
     private String bookTitle;
     private int price;
-    private Date advertDate;
-    private Date expireDate;
+    private String advertDate;
+    private String expireDate;
 
-    public UserSeller(String name, String surname, String studentNumber, long telNumber, String bookDesc, String bookTitle, int price, Date advertDate, Date expireDate)
+    public UserSeller(String name, String surname, String studentNumber, long telNumber, String bookDesc, String bookTitle, int price, String advertDate, String expireDate)
     {
         super(name, surname, studentNumber, telNumber);
         this.bookDesc = bookDesc;
@@ -23,14 +21,14 @@ public class UserSeller extends User
     }
 
 
-    public UserSeller(Builder builder, String bookDesc, String bookTitle, int price, Date advertDate, Date expireDate)
+    public UserSeller(Builder builder)
     {
-        super(builder);
-        this.bookDesc = bookDesc;
-        this.bookTitle = bookTitle;
-        this.price = price;
-        this.advertDate = advertDate;
-        this.expireDate = expireDate;
+
+        this.bookDesc = builder.bookDesc;
+        this.bookTitle = builder.bookTitle;
+        this.price = builder.price;
+        this.advertDate = builder.advertDate;
+        this.expireDate = builder.expireDate;
     }
 
     public String getBookDesc()
@@ -48,14 +46,58 @@ public class UserSeller extends User
         return price;
     }
 
-    public Date getAdvertDate()
+    public String getAdvertDate()
     {
         return advertDate;
     }
 
-    public Date getExpireDate()
+    public String getExpireDate()
     {
         return expireDate;
+    }
+
+    public static class Builder
+    {
+        private String bookDesc;
+        private String bookTitle;
+        private int price;
+        private String advertDate;
+        private String expireDate;
+
+        public Builder bookDesc(String bookDesc)
+        {
+            this.bookDesc = bookDesc;
+            return this;
+        }
+
+        public Builder bookTitle(String bookTitle)
+        {
+            this.bookTitle = bookTitle;
+            return this;
+        }
+
+        public Builder price(int price)
+        {
+            this.price= price;
+            return this;
+        }
+
+        public Builder advertDate(String advertDate)
+        {
+            this.advertDate = advertDate;
+            return this;
+        }
+
+        public Builder expireDate(String expireDate)
+        {
+            this.expireDate = expireDate;
+            return this;
+        }
+
+        public UserSeller builc()
+        {
+            return new UserSeller(this);
+        }
     }
 
     @Override

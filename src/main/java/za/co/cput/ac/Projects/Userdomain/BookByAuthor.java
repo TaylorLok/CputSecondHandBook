@@ -1,11 +1,11 @@
 package Domain;
 
-public abstract class BookByAuthor extends Book
+public class BookByAuthor extends Book
 {
     private String name;
     private String Bio;
 
-    public BookByAuthor()
+    private BookByAuthor()
     {
 
     }
@@ -14,6 +14,7 @@ public abstract class BookByAuthor extends Book
     {
         this.name = builder.name;
         this.Bio = builder.Bio;
+
     }
 
     public String getName()
@@ -46,7 +47,15 @@ public abstract class BookByAuthor extends Book
 
         public BookByAuthor build()
         {
+            //return new BookByAuthor(this);
             return new BookByAuthor(this);
+        }
+
+        @Override
+        public String toString()
+        {
+            return "Builder{" + "name='" + name +
+                    '\'' + ", Bio='" + Bio + '\'' + '}';
         }
     }
 }

@@ -1,6 +1,6 @@
 package Domain;
 
-public abstract class Book implements IBook
+public class Book
 {
 
     private String bookTitle;
@@ -102,73 +102,18 @@ public abstract class Book implements IBook
 
         public Book build()
         {
-            return new Book(this)
-            {
-                @Override
-                public String getInformationTech()
-                {
-                    return null;
-                }
+            return new Book(this);
 
-                @Override
-                public String getManagement()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getCommerce() {
-                    return null;
-                }
-
-                @Override
-                public String getMarketing() {
-                    return null;
-                }
-
-                @Override
-                public String getProjectManagement()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfAppliedScience()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfInformDesign()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfEngineering()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfEducation()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfBusiness()
-                {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfHealth()
-                {
-                    return null;
-                }
-            };
         }
+
     }
 
+    @Override
+    public String toString() {
+        return "Book{" + "bookTitle='" + bookTitle +
+                '\'' + ", bookDescription='" + bookDescription +
+                '\'' + ", bookPrice=" + bookPrice + ", publisher='"
+                + publisher + '\'' + ", publicationDate='" + publicationDate +
+                '\'' + ", bookLanguage='" + bookLanguage + '\'' + '}';
+    }
 }

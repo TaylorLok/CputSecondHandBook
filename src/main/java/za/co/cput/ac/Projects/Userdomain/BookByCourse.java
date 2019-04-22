@@ -1,6 +1,6 @@
 package Domain;
 
-public abstract class BookByCourse extends Book
+public class BookByCourse extends Book
 {
     private String informationTech;
     private String management;
@@ -89,40 +89,16 @@ public abstract class BookByCourse extends Book
 
         public BookByCourse build()
         {
-            BookByCourse bookByCourse = new BookByCourse(this) {
-                @Override
-                public String getDptOfAppliedScience() {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfInformDesign() {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfEngineering() {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfEducation() {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfBusiness() {
-                    return null;
-                }
-
-                @Override
-                public String getDptOfHealth() {
-                    return null;
-                }
-            };
-            return bookByCourse;
+            return new BookByCourse(this);
         }
     }
 
-
+    @Override
+    public String toString()
+    {
+        return "BookByCourse{" + "informationTech='" + informationTech +
+                '\'' + ", management='" + management + '\'' + ", commerce='" + commerce +
+                '\'' + ", marketing='" + marketing + '\'' + ", projectManagement='" + projectManagement +
+                '\'' + '}';
+    }
 }
