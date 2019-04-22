@@ -1,32 +1,18 @@
 package Factory;
 
 import Domain.BookByAuthor;
-import Domain.IBookByAuthor;
 
 import java.util.Map;
 
-public abstract class BookByAuthorFactory implements IBookByAuthor
+public class BookByAuthorFactory
 {
-    private static BookByAuthorFactory factory = null;
-
-    protected BookByAuthorFactory()
+    private static BookByAuthorFactory getInstance(String name,String Bio)
     {
-
+        return new BookByAuthorFactory.Builder()
+                   .name(name)
+                   .Bio(Bio)
+                   . build();
     }
-    public BookByAuthor getBook(Map<String, String> input)
-    {
 
-        BookByAuthor author = new BookByAuthor.Builder().build();
 
-        if (input.containsKey("Name"))
-        {
-            BookByAuthor author1 = new BookByAuthor.Builder()
-                    .name(getName())
-                    .Bio(getBio())
-                    .build();
-
-        }
-
-        return author;
-    }
 }
