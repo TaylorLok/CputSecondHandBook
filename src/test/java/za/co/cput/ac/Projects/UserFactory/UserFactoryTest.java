@@ -1,16 +1,19 @@
-package za.co.cput.ac.Projects.UserFactory;
+package Factory;
 
+import Domain.User;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import za.co.cput.ac.Projects.Userdomain.User;
 
 public class UserFactoryTest {
 
     @Before
-    public void setUp() throws Exception
-    {
-        String name = "Taylor";
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
     }
 
     @Test
@@ -18,11 +21,12 @@ public class UserFactoryTest {
     {
         String name ="Taylor";
         String surname ="Lokombe";
-        int studentNumber = 214291324;
+        String studentNumber = "214291324";
+        String telNumber = "0780140396";
 
-        User user = UserFactory.getUser(name,surname,studentNumber);
-        System.out.println(user);
-        Assert.assertNotNull(((User) user).getName());
+        //User user = UserFactory.getUser(name,surname,studentNumber);
+        System.out.println();
+        //Assert.assertNotNull(((UserFactory.User) user).getUser(name,surname,studentNumber,telNumber));
 
         //Assert.assertEquals("Taylor","lokombe");
     }
