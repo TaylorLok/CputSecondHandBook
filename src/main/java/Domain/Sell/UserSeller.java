@@ -1,7 +1,7 @@
 package Domain.Sell;
 
 
-import Domain.User.User;
+import Domain.domainUser.User;
 
 public class UserSeller extends User
 {

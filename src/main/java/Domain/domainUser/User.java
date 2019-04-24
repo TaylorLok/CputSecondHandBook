@@ -1,26 +1,32 @@
-package Domain.User;
+package Domain.domainUser;
 
-public class UserRegistration
+public class User
 {
+
     private String name;
     private String surname;
     private String studentNumber;
-    private String emailAddress;
-    private String password;
+    private long telNumber;
 
-    private UserRegistration()
+    public User(String name, String surname, String studentNumber, long telNumber)
+    {
+        this.name = name;
+        this.surname = surname;
+        this.studentNumber = studentNumber;
+        this.telNumber = telNumber;
+    }
+
+    protected User()
     {
 
     }
 
-    public UserRegistration (Builder builder)
+    public User(Builder builder)
     {
         this.name = builder.name;
         this.surname = builder.surname;
         this.studentNumber = builder.studentNumber;
-        this.emailAddress = builder.emailAddress;
-        this.password = builder.password;
-
+        this.telNumber = builder.telNumber;
     }
 
     public String getName()
@@ -38,14 +44,9 @@ public class UserRegistration
         return studentNumber;
     }
 
-    public String getEmailAddress()
+    public long getTelNumber()
     {
-        return emailAddress;
-    }
-
-    public String getPassword()
-    {
-        return password;
+        return telNumber;
     }
 
     public static class Builder
@@ -53,8 +54,7 @@ public class UserRegistration
         private String name;
         private String surname;
         private String studentNumber;
-        private String password;
-        private String emailAddress;
+        private long telNumber;
 
         public Builder name(String name)
         {
@@ -74,21 +74,22 @@ public class UserRegistration
             return this;
         }
 
-        public Builder password(String password)
+        public Builder telNumber(long telNumber)
         {
-            this.password = password;
+            this.telNumber = telNumber;
             return this;
         }
 
-        public Builder emailAddress(String emailAddress)
+        public User build()
         {
-            this.emailAddress = emailAddress;
-            return this;
-        }
-
-        public UserRegistration build()
-        {
-            return new UserRegistration(this);
+            return new User(this);
         }
     }
+
+    public void ViewBook()
+    {
+        System.out.println("Available Book is ");
+    }
+
+
 }

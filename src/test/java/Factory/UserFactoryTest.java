@@ -22,9 +22,9 @@ public class UserFactoryTest {
         String studentNumber = "214291324";
         String telNumber = "0780140396";
 
-        //User user = UserFactory.getUser(name,surname,studentNumber);
+        //domainUser user = UserFactory.getUser(name,surname,studentNumber);
         System.out.println();
-        //Assert.assertNotNull(((UserFactory.User) user).getUser(name,surname,studentNumber,telNumber));
+        //Assert.assertNotNull(((UserFactory.domainUser) user).getUser(name,surname,studentNumber,telNumber));
 
         //Assert.assertEquals("Taylor","lokombe");
     }

@@ -1,4 +1,4 @@
-package Domain.User;
+package Domain.domainUser;
 
 public class UserForgotPassword
 {

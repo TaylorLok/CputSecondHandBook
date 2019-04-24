@@ -6,7 +6,7 @@ public class UserFactory
 {
     public static User getUser(String name, String surname, String studentNumber, long telNumber)
     {
-        return new User.Builder()
+        return new domainUser.Builder()
                 .name(name)
                 .surname(surname)
                 .studentNumber(studentNumber)

@@ -1,6 +1,6 @@
 package Factory.User;
 
-import Domain.User.UserRegistration;
+import Domain.domainUser.UserRegistration;
 
 public class UserRegistrationFactory
 {

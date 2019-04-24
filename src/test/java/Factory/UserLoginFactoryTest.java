@@ -1,9 +1,8 @@
 package Factory;
 
-import Domain.User.UserLogin;
+import Domain.domainUser.UserLogin;
 import Factory.User.UserLoginFactory;
 //import UserLogin;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

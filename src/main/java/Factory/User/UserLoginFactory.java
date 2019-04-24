@@ -2,7 +2,7 @@ package Factory.User;
 
 //import UserLogin;
 
-import Domain.User.UserLogin;
+import Domain.domainUser.UserLogin;
 
 public class UserLoginFactory
 {

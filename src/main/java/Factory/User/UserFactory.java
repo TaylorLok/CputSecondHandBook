@@ -1,6 +1,6 @@
 package Factory.User;
 
-import Domain.User.User;
+import Domain.domainUser.User;
 
 public class UserFactory
 {

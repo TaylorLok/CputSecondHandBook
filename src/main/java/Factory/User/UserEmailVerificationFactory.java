@@ -1,7 +1,7 @@
 package Factory.User;
 
 
-import Domain.User.UserEmailVerification;
+import Domain.domainUser.UserEmailVerification;
 
 public class UserEmailVerificationFactory
 {
