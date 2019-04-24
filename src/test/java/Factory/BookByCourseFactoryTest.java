@@ -6,21 +6,21 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class UserForgotPasswordFactoryTest
+public class BookByCourseFactoryTest
 {
 
-
     @Before
-    public void setUp() throws Exception {
+    public void setUp() throws Exception
+    {
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() throws Exception
+    {
     }
 
     @Test
-    public void getUserPassword()
+    public void getBookbyCouse()
     {
-
     }
 }
