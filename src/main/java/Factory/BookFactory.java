@@ -1,6 +1,6 @@
-package Factory.Book;
+package Factory;
 
-import Domain.domainBook.Book;
+import Domain.Book;
 
 import java.util.Map;
 

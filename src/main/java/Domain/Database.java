@@ -1,4 +1,4 @@
-package Domain.Database;
+package Domain;
 
 public class Database
 {

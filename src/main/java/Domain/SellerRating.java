@@ -1,4 +1,4 @@
-package Domain.Sell;
+package Domain;
 
 public class SellerRating
 {

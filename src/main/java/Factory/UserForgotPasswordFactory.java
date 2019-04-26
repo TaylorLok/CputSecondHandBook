@@ -1,6 +1,6 @@
-package Factory.User;
+package Factory;
 
-import Domain.domainUser.UserForgotPassword;
+import Domain.UserForgotPassword;
 
 public class UserForgotPasswordFactory
 {

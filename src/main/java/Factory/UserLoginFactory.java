@@ -1,8 +1,8 @@
-package Factory.User;
+package Factory;
 
 //import UserLogin;
 
-import Domain.domainUser.UserLogin;
+import Domain.UserLogin;
 
 public class UserLoginFactory
 {

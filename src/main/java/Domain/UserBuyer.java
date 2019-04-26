@@ -1,4 +1,4 @@
-package Domain.Buy;
+package Domain;
 
 public class UserBuyer
 {

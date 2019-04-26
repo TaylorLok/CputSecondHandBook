@@ -1,4 +1,4 @@
-package Factory.Buy;
+package Factory;
 
 public class UserBuyerFactory
 {

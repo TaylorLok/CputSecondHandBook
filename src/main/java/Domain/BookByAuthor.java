@@ -1,4 +1,4 @@
-package Domain.domainBook;
+package Domain;
 
 public class BookByAuthor extends Book
 {

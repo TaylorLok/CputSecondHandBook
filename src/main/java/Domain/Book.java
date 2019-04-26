@@ -1,6 +1,10 @@
-package Domain.domainBook;
+package Domain;
 
-public class Book
+import Factory.IBookFactory;
+
+import java.util.Map;
+
+public class Book implements IBookFactory
 {
 
     private String bookTitle;
@@ -53,6 +57,12 @@ public class Book
     public String getBookLanguage()
     {
         return bookLanguage;
+    }
+
+    @Override
+    public Book getBook(Map<String, String> input)
+    {
+        return null;
     }
 
     public static class Builder

@@ -1,4 +1,4 @@
-package Domain.domainUser;
+package Domain;
 
 public class UserRecord
 {

@@ -1,4 +1,4 @@
-package Factory.Book;
+package Factory;
 
 public class BookByCourseFactory
 {

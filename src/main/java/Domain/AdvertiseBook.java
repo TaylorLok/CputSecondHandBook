@@ -1,12 +1,13 @@
-package Domain.Advert;
+package Domain;
 
-import java.util.ArrayList;
-
-public class AdvertiseBook
+public class AdvertiseBook implements IAdvertiseBook
 {
     private String userName;
+    private String title;
     private boolean buyOrSell;
     private double price;
+    private String date;
+
 
 
     protected AdvertiseBook()
@@ -16,8 +17,10 @@ public class AdvertiseBook
     private AdvertiseBook(Builder builder)
     {
         this.userName = builder.userName;
+        this.title = builder.title;
         this.buyOrSell = builder.buyOrSell;
         this.price = builder.price;
+        this.date = builder.date;
 
     }
 
@@ -36,90 +39,74 @@ public class AdvertiseBook
         return price;
     }
 
-    public ArrayList<String> getImagepaths() {
-        return imagepaths;
+    public String getTitle()
+    {
+        return title;
     }
 
-    public static class Builder {
+    public String getDate()
+    {
+        return date;
+    }
 
-        private String id;
+    public static class Builder
+    {
         private String userName;
-        private ArrayList<String> imagepaths;
+        private String title;
         private boolean buyOrSell;
         private double price;
+        private String date;
 
-
-        public Builder() {
+        public Builder()
+        {
 
         }
 
-        public Builder copy(Advert advert) {
-            this.id = advert.id;
+        public Builder Advert(AdvertiseBook advert) {
+            this.userName = advert.userName;
             this.title = advert.title;
-            this.user = advert.user;
-            this.product = advert.product;
             this.buyOrSell = advert.buyOrSell;
             this.price = advert.price;
-            this.location = advert.location;
-            this.imagepaths = advert.imagepaths;
             this.date = advert.date;
             return this;
-
         }
 
-        public Builder date(String date) {
-            this.date = date;
+        public Builder userName(String userName)
+        {
+            this.userName = userName;
             return this;
         }
 
-        public Builder location(Location location) {
-            this.location = location;
-            return this;
-        }
-
-        public Builder id(String id) {
-            this.id = id;
-            return this;
-        }
-
-        public Builder title(String title) {
+        public Builder title(String title)
+        {
             this.title = title;
             return this;
         }
 
-        public Builder user(User user) {
-            this.user = user;
-            return this;
-        }
 
-        public Builder product(IProduct product) {
-            this.product = product;
-            return this;
-
-        }
-
-        public Builder buyOrSell(boolean buyOrSell) {
+        public Builder buyOrSell(boolean buyOrSell)
+        {
             this.buyOrSell = buyOrSell;
             return this;
         }
 
-        public Builder price(double price) {
+        public Builder price(double price)
+        {
             this.price = price;
             return this;
 
         }
 
-        public Builder imagePaths(ArrayList<String> imagepaths) {
-            this.imagepaths = imagepaths;
-            return this;
+       public Builder date(String date)
+       {
+        this.date = date;
+        return this;
+       }
 
+        public AdvertiseBook build()
+        {
+            return new AdvertiseBook(this);
         }
-
-        public Advert build() {
-            return new Advert(this);
-        }
-
-
     }
 
 
