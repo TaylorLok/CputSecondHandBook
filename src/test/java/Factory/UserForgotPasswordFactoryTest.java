@@ -1,26 +1,25 @@
 package Factory;
 
-import org.junit.After;
-import org.junit.Before;
+import Domain.UserForgotPassword;
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class UserForgotPasswordFactoryTest
 {
-
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
+    UserForgotPassword userPass;
 
     @Test
     public void getUserPassword()
     {
+        userPass = new UserForgotPassword.Builder()
+                                         .secretQuestion("name of your Hero?")
+                                         .secretAnswer("Jesus")
+                                         .build();
 
+
+        Assert.assertNotNull(userPass);
+        Assert.assertEquals("name of your Hero?",userPass.getSecretQuestion());
+        Assert.assertEquals("Jesus",userPass.getSecretAnswer());
+        Assert.assertFalse("question",false);
     }
 }

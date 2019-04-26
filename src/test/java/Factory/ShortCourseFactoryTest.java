@@ -1,26 +1,26 @@
 package Factory;
 
-import org.junit.After;
-import org.junit.Before;
+import Domain.ShortCourse;
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ShortCourseFactoryTest
 {
-
-    @Before
-    public void setUp() throws Exception
-    {
-    }
-
-    @After
-    public void tearDown() throws Exception
-    {
-    }
+    ShortCourse shortCourse;
 
     @Test
     public void getShortCourse()
     {
+        shortCourse = new ShortCourse.Builder()
+                               .build();
+
+
+        Assert.assertNotNull(shortCourse);
+        Assert.assertEquals("CCNA",shortCourse.getCcna1());
+        Assert.assertEquals("ccnp",shortCourse.getCcnp());
+        Assert.assertEquals("ccn3",shortCourse.getCcna2());
+        Assert.assertEquals("cybersecurity",shortCourse.getCyberSecurity());
+
+
     }
 }

@@ -1,24 +1,30 @@
 package Factory;
 
-import org.junit.After;
-import org.junit.Before;
+import Domain.BookByDepartment;
+import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+public class BookByDepartmentFactoryTest
+{
 
-public class BookByDepartmentFactoryTest {
-
-    @Before
-    public void setUp() throws Exception
-    {
-    }
-
-    @After
-    public void tearDown() throws Exception
-    {
-    }
+  BookByDepartment bookdpt;
 
     @Test
-    public void getInstance() {
+    public void getInstance()
+    {
+        bookdpt = new BookByDepartment.Builder()
+                                      .dptOfAppliedScience("information Design book")
+                                      .dptOfBusiness("management book")
+                                      .dptOfEducation("English Book for Teaching")
+                                      .dptOfEngineering("How to program book")
+                                      .dptOfHealth("Anatomy of life book")
+                                      .dptOfInformDesign("jewelery and design book ")
+                                      .build();
+
+
+        Assert.assertNotNull(bookdpt);
+        Assert.assertEquals("Anatomy of life book",bookdpt.getDptOfHealth());
+        Assert.assertEquals("information design book",bookdpt.getDptOfAppliedScience());
+        Assert.assertEquals("English book for teaching",bookdpt.getDptOfEducation());
     }
 }

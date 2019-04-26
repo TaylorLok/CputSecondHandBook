@@ -1,22 +1,25 @@
 package Factory;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import Domain.UserEmailVerification;
+import org.junit.Assert;
 
-import static org.junit.Assert.*;
+public class UserEmailVerificationFactoryTest
+{
 
-public class UserEmailVerificationFactoryTest {
+      UserEmailVerification userM;
 
-    @Before
-    public void setUp() throws Exception {
+    @org.junit.Test
+    public void getUserVerify() throws Exception
+    {
+        userM = new UserEmailVerification.Builder()
+                                         .build();
+
+
+        Assert.assertNotNull(userM);
+        Assert.assertTrue("sent",true);
+        Assert.assertFalse(false);
+
+
     }
 
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    @Test
-    public void getUserVerify() {
-    }
 }
