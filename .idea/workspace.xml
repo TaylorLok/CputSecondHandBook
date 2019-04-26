@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Factory/UserLoginFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Factory/UserLoginFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Factory/UserLoginFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -89,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Factory/UserLoginFactory.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="476">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -128,18 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Factory/BookByDepartmentFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -160,7 +148,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Factory/UserForgotPasswordFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Factory/UserFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Factory/IBookFactory.java" />
@@ -210,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/test/java/Factory/UserEmailVerificationFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Factory/UserForgotPasswordFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Factory/UserLoginFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java" />
       </list>
     </option>
   </component>
@@ -313,7 +301,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556313491270" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556314042378" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/FBLT-master" />
@@ -362,7 +350,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserLoginFactoryTest">
+  <component name="RunManager" selected="JUnit.UserRegistrationFactoryTest.getUserRegistration">
     <configuration name="Projects.getUser" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -376,37 +364,6 @@
       <option name="METHOD_NAME" value="getUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserEmailVerificationFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Factory" />
-      <option name="MAIN_CLASS_NAME" value="Factory.UserEmailVerificationFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserEmailVerificationFactoryTest.getUserVerify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Factory" />
-      <option name="MAIN_CLASS_NAME" value="Factory.UserEmailVerificationFactoryTest" />
-      <option name="METHOD_NAME" value="getUserVerify" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -458,21 +415,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRegistrationFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Factory" />
+      <option name="MAIN_CLASS_NAME" value="Factory.UserRegistrationFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRegistrationFactoryTest.getUserRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Factory" />
+      <option name="MAIN_CLASS_NAME" value="Factory.UserRegistrationFactoryTest" />
+      <option name="METHOD_NAME" value="getUserRegistration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Projects.getUser" />
-      <item itemvalue="JUnit.UserEmailVerificationFactoryTest" />
-      <item itemvalue="JUnit.UserEmailVerificationFactoryTest.getUserVerify" />
       <item itemvalue="JUnit.UserForgotPasswordFactoryTest.getUserPassword" />
       <item itemvalue="JUnit.UserLoginFactoryTest.createLogin" />
       <item itemvalue="JUnit.UserLoginFactoryTest" />
+      <item itemvalue="JUnit.UserRegistrationFactoryTest" />
+      <item itemvalue="JUnit.UserRegistrationFactoryTest.getUserRegistration" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegistrationFactoryTest.getUserRegistration" />
+        <item itemvalue="JUnit.UserRegistrationFactoryTest" />
         <item itemvalue="JUnit.UserLoginFactoryTest" />
         <item itemvalue="JUnit.UserLoginFactoryTest.createLogin" />
         <item itemvalue="JUnit.UserForgotPasswordFactoryTest.getUserPassword" />
-        <item itemvalue="JUnit.UserEmailVerificationFactoryTest.getUserVerify" />
-        <item itemvalue="JUnit.UserEmailVerificationFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +482,7 @@
       <workItem from="1555613168250" duration="11800000" />
       <workItem from="1555940523859" duration="27423000" />
       <workItem from="1556119650295" duration="6108000" />
-      <workItem from="1556301488499" duration="11845000" />
+      <workItem from="1556301488499" duration="12393000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
@@ -521,12 +509,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookByCourseFactoryTest_getBookbyCouse - 2019.04.26 at 22h 05m 06s.xml">
-      <configuration name="BookByCourseFactoryTest.getBookbyCouse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookByCourseFactoryTest_getBookbyCouse - 2019.04.26 at 22h 05m 43s.xml">
-      <configuration name="BookByCourseFactoryTest.getBookbyCouse" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookByDepartmentFactoryTest_getInstance - 2019.04.26 at 22h 16m 20s.xml">
       <configuration name="BookByDepartmentFactoryTest.getInstance" configurationId="JUnit" />
     </history-entry>
@@ -551,9 +533,15 @@
     <history-entry file="UserForgotPasswordFactoryTest_getUserPassword - 2019.04.26 at 23h 10m 37s.xml">
       <configuration name="UserForgotPasswordFactoryTest.getUserPassword" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserLoginFactoryTest_createLogin - 2019.04.26 at 23h 18m 18s.xml">
+      <configuration name="UserLoginFactoryTest.createLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserLoginFactoryTest - 2019.04.26 at 23h 18m 28s.xml">
+      <configuration name="UserLoginFactoryTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93216000" />
+    <option name="totallyTimeSpent" value="93764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -640,19 +628,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Domain/BookByDepartment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -982,20 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Factory/UserLoginFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Factory/UserRegistrationFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Factory/UserForgotPasswordFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1023,6 +984,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Factory/UserLoginFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Factory/UserRegistrationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
