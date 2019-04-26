@@ -63,25 +63,25 @@ public class BookByCourse extends Book
             return this;
         }
 
-        public Builder management(String management)
+        public Builder management()
         {
             this.management = management;
             return this;
         }
 
-        public Builder commerce(String commerce)
+        public Builder commerce()
         {
             this.commerce = commerce;
             return this;
         }
 
-        public Builder marketing(String marketing)
+        public Builder marketing()
         {
             this.marketing = marketing;
             return this;
         }
 
-        public Builder projectManagement(String projectManagement)
+        public Builder projectManagement()
         {
             this.projectManagement = projectManagement;
             return this;
@@ -90,6 +90,12 @@ public class BookByCourse extends Book
         public BookByCourse build()
         {
             return new BookByCourse(this);
+        }
+
+        public Builder informationTech()
+        {
+            this.informationTech = informationTech;
+            return this;
         }
     }
 

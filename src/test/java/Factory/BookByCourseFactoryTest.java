@@ -1,26 +1,25 @@
 package Factory;
 
-import org.junit.After;
-import org.junit.Before;
+import Domain.BookByCourse;
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class BookByCourseFactoryTest
 {
-
-    @Before
-    public void setUp() throws Exception
-    {
-    }
-
-    @After
-    public void tearDown() throws Exception
-    {
-    }
-
+   BookByCourse book;
     @Test
     public void getBookbyCouse()
     {
+        book = new BookByCourse.Builder()
+                       .informationTech("IT")
+                       .commerce()
+                       .management()
+                       .marketing()
+                       .projectManagement()
+                       .build();
+
+        Assert.assertNotNull(book);
+        Assert.assertEquals("IT",book.getInformationTech());
+        Assert.assertEquals("coomerce",book.getCommerce());
     }
 }
