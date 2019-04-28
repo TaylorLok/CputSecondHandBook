@@ -6,9 +6,9 @@ public class User implements IUser
     private String name;
     private String surname;
     private String studentNumber;
-    private long telNumber;
+    private int telNumber;
 
-    public User(String name, String surname, String studentNumber, long telNumber)
+    public User(String name, String surname, String studentNumber, int telNumber)
     {
         this.name = name;
         this.surname = surname;
@@ -44,7 +44,7 @@ public class User implements IUser
         return studentNumber;
     }
 
-    public long getTelNumber()
+    public int getTelNumber()
     {
         return telNumber;
     }
@@ -54,7 +54,7 @@ public class User implements IUser
         private String name;
         private String surname;
         private String studentNumber;
-        private long telNumber;
+        private int telNumber;
 
         public Builder name(String name)
         {
@@ -74,7 +74,7 @@ public class User implements IUser
             return this;
         }
 
-        public Builder telNumber(long telNumber)
+        public Builder telNumber(int telNumber)
         {
             this.telNumber = telNumber;
             return this;

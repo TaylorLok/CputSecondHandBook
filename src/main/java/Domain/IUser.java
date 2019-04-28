@@ -11,7 +11,7 @@ public interface IUser
     String getStudentNumber();
 
 
-    long getTelNumber();
+    int getTelNumber();
 
 
 }
