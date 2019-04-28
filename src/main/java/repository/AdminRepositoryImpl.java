@@ -15,7 +15,7 @@ public class AdminRepositoryImpl implements AdminRepository
       this.admins = new HashSet<>();
   }
 
-  private AdminRepositoryImpl getRepository()
+  protected static AdminRepositoryImpl getRepository()
   {
       if(repository==null) repository = new AdminRepositoryImpl();
       return repository;
