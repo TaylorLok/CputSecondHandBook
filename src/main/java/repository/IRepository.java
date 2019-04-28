@@ -1,9 +1,9 @@
 package repository;
 
-public interface IRepository<book,sort>
+public interface IRepository<Real,sort>
 {
-    book create(book sort);
-    book update(book sort);
-    void delete(sort sort);
-    book read(sort sort);
+    Real create(Real sort);
+    Real update(Real sort);
+    void delete(Real sort);
+    Real read(Real sort);
 }

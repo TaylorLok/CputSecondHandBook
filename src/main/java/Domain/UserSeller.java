@@ -1,7 +1,7 @@
 package Domain;
 
 
-public class UserSeller extends User
+public class UserSeller
 {
     private String bookDesc;
     private String bookTitle;
@@ -9,15 +9,8 @@ public class UserSeller extends User
     private String advertDate;
     private String expireDate;
 
-    public UserSeller(String name, String surname, String studentNumber, long telNumber, String bookDesc, String bookTitle, int price, String advertDate, String expireDate)
+    public UserSeller()
     {
-        super(name, surname, studentNumber, telNumber);
-        this.bookDesc = bookDesc;
-        this.bookTitle = bookTitle;
-        this.price = price;
-        this.advertDate = advertDate;
-        this.expireDate = expireDate;
-       // this.telNumber= telNumber;
     }
 
 
@@ -94,7 +87,7 @@ public class UserSeller extends User
             return this;
         }
 
-        public UserSeller builc()
+        public UserSeller build()
         {
             return new UserSeller(this);
         }

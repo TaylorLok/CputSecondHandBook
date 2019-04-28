@@ -1,6 +1,6 @@
 package Domain;
 
-public class User
+public class User implements IUser
 {
 
     private String name;
@@ -86,10 +86,9 @@ public class User
         }
     }
 
-    public void ViewBook()
-    {
-        System.out.println("Available domainBook is ");
+    @Override
+    public String toString() {
+        return "User{" + "name='" + name + '\'' + ", surname='" + surname +
+                '\'' + ", studentNumber='" + studentNumber + '\'' + ", telNumber=" + telNumber + '}';
     }
-
-
 }
