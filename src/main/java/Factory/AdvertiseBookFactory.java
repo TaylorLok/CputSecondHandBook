@@ -6,7 +6,13 @@ public class AdvertiseBookFactory
 {
         public static AdvertiseBook getAdvert(String userName, String title, boolean buyOrSell, double price, String date)
         {
-            return new AdvertiseBook.Builder().Advert(getAdvert(userName,title, buyOrSell,price, date)).build();
+            return new AdvertiseBook.Builder()
+                                    .userName(userName)
+                                    .title(title)
+                                    .buyOrSell(false)
+                                    .price(price)
+                                    .date(date)
+                                    .build();
 
         }
 }

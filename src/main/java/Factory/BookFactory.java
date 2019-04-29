@@ -4,7 +4,7 @@ import Domain.Book;
 
 import java.util.Map;
 
-public class BookFactory implements IBookFactory
+public class BookFactory extends Book implements IBookFactory
 {
     private static BookFactory factory = null;
 
