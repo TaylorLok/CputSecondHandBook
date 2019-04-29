@@ -44,7 +44,17 @@ public class AdvertiseBookRepositoryImpl implements AdvertiseBookRepository
       return advertiseBook;
   }
 
-  public Set<AdvertiseBook> getAll()
+    @Override
+    public void delete(AdvertiseBook sort) {
+
+    }
+
+    @Override
+    public AdvertiseBook read(AdvertiseBook sort) {
+        return null;
+    }
+
+    public Set<AdvertiseBook> getAll()
   {
       return this.advertiseBooks;
   }

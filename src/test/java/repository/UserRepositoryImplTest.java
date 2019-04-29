@@ -28,7 +28,8 @@ public class UserRepositoryImplTest
     @Test
     public void read()
     {
-        Assert.assertEquals(repository.read(user.getName(),repository.read(user.getName()));
+
+        Assert.assertEquals(repository.read(user.getName(),repository.read(user.getName());
     }
 
     @Test

@@ -44,6 +44,16 @@ public class UserRepositoryImpl implements UserRepository
     }// updating a user
 
     @Override
+    public void delete(User sort) {
+
+    }
+
+    @Override
+    public User read(User sort) {
+        return null;
+    }
+
+    @Override
     public Set<User> getAll()
     {
         return this.users;

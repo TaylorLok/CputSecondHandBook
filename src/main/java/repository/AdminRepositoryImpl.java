@@ -42,7 +42,17 @@ public class AdminRepositoryImpl implements AdminRepository
       return admin;
   }
 
-  public Set<Admin> getAll()
+    @Override
+    public void delete(Admin sort) {
+
+    }
+
+    @Override
+    public Admin read(Admin sort) {
+        return null;
+    }
+
+    public Set<Admin> getAll()
   {
       return admins;
   }

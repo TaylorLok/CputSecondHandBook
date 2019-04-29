@@ -43,6 +43,16 @@ public class BookRepositoryImpl implements BookRepository
         return e;
     }
 
+    @Override
+    public void delete(Book sort) {
+
+    }
+
+    @Override
+    public Book read(Book sort) {
+        return null;
+    }
+
     public Set<Book> getAll()
     {
         return this.books;
