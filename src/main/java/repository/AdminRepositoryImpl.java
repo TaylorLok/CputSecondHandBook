@@ -8,7 +8,7 @@ import java.util.Set;
 public class AdminRepositoryImpl implements AdminRepository
 {
   private static AdminRepositoryImpl repository = null;
-  private Set<Admin> admins;
+  private Set<Admin> admins;// this is the data store
 
   private AdminRepositoryImpl()
   {
@@ -29,6 +29,7 @@ public class AdminRepositoryImpl implements AdminRepository
 
   public Admin read(String surname)
   {
+      //here its require a for loop
       return null;
   }
 

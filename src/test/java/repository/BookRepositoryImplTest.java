@@ -29,7 +29,9 @@ public class BookRepositoryImplTest
     @Test
     public void create()
     {
-        Assert.assertEquals(repository.create(book),repository.create(book));
+        //Assert.assertNotNull(book);
+        //Assert.assertEquals("Book",book.getBookTitle());
+       Assert.assertEquals(repository.create(book),repository.create(book));
     }
 
     @Test
@@ -50,17 +52,6 @@ public class BookRepositoryImplTest
         Assert.assertEquals(repository.update(book),repository.update(book));
     }
 
-    @Test
-    public void delete1()
-    {
-
-    }
-
-    @Test
-    public void read1()
-    {
-
-    }
 
     @Test
     public void getAll()

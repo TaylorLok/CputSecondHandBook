@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/repository/AdvertiseBookRepositoryImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/BookByAuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/BookByCourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserBuyerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserEmailVerificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserForgotPasswordRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserLoginRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserRegistrationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserSellerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/AdvertiseBookFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/AdvertiseBookFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/BookFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/BookFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/UserRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Factory/BookFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Factory/BookFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Factory/UserBuyerFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Factory/UserBuyerFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/BookRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/repository/BookRepositoryImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,118 +40,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookRepositoryImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserForgotPasswordRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserSellerRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repository/AdvertiseBookRepositoryImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserBuyerRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserEmailVerificationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserAccount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserDeregistration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserForgotLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain/ShortCourse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repository/AdvertiseBookRepositoryImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="89" selection-start-line="3" selection-start-column="89" selection-end-line="3" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Factory/AdvertiseBookFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserForgotPassword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Factory/AdvertiseBookFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repository/UserRepositoryImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repository/AdminRepositoryImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -158,9 +135,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -171,9 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Domain/domainBook/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Factory/Book/BookByDepartmentFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Factory/Book/BookByAuthorFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/Advert/AdvertiseBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/IAdvertiseBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/Book.java" />
@@ -219,9 +193,12 @@
         <option value="$PROJECT_DIR$/src/main/java/repository/BookRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/UserRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Factory/BookFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Factory/AdvertiseBookFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/repository/AdvertiseBookRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/UserForgotPasswordRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/UserEmailVerificationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -301,43 +278,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Factory" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CputSecondHandBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CputSecondHandBook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CputSecondHandBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CputSecondHandBook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CputSecondHandBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CputSecondHandBook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CputSecondHandBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CputSecondHandBook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CputSecondHandBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CputSecondHandBook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -349,7 +289,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556538426573" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556540352467" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/FBLT-master" />
@@ -399,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AdvertiseBookRepositoryImplTest.create">
+  <component name="RunManager" selected="JUnit.BookRepositoryImplTest.create">
     <configuration name="AdvertiseBookRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -448,22 +388,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdvertiseBookRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="repository" />
-      <option name="MAIN_CLASS_NAME" value="repository.AdvertiseBookRepositoryImplTest" />
-      <option name="METHOD_NAME" value="read" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AdvertiseBookRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -475,6 +399,22 @@
       <option name="PACKAGE_NAME" value="repository" />
       <option name="MAIN_CLASS_NAME" value="repository.AdvertiseBookRepositoryImplTest" />
       <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.BookRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -503,15 +443,15 @@
       <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.update" />
       <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.delete" />
       <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.getAll" />
-      <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.read" />
+      <item itemvalue="JUnit.BookRepositoryImplTest.create" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookRepositoryImplTest.create" />
         <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.create" />
         <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.update" />
         <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.delete" />
         <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.getAll" />
-        <item itemvalue="JUnit.AdvertiseBookRepositoryImplTest.read" />
       </list>
     </recent_temporary>
   </component>
@@ -535,7 +475,7 @@
       <workItem from="1556119650295" duration="6108000" />
       <workItem from="1556301488499" duration="13817000" />
       <workItem from="1556469821444" duration="23426000" />
-      <workItem from="1556534144904" duration="4115000" />
+      <workItem from="1556534144904" duration="5703000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
@@ -562,24 +502,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdvertiseBookRepositoryImplTest_update - 2019.04.29 at 13h 22m 12s.xml">
-      <configuration name="AdvertiseBookRepositoryImplTest.update" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdvertiseBookRepositoryImplTest_update - 2019.04.29 at 13h 24m 15s.xml">
-      <configuration name="AdvertiseBookRepositoryImplTest.update" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdvertiseBookFactoryTest_getAdvert - 2019.04.29 at 13h 27m 51s.xml">
-      <configuration name="AdvertiseBookFactoryTest.getAdvert" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdvertiseBookRepositoryImplTest_update - 2019.04.29 at 13h 29m 44s.xml">
-      <configuration name="AdvertiseBookRepositoryImplTest.update" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdvertiseBookRepositoryImplTest_create - 2019.04.29 at 13h 30m 07s.xml">
-      <configuration name="AdvertiseBookRepositoryImplTest.create" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdvertiseBookRepositoryImplTest_delete - 2019.04.29 at 13h 30m 43s.xml">
-      <configuration name="AdvertiseBookRepositoryImplTest.delete" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AdvertiseBookRepositoryImplTest_getAll - 2019.04.29 at 13h 35m 22s.xml">
       <configuration name="AdvertiseBookRepositoryImplTest.getAll" configurationId="JUnit" />
     </history-entry>
@@ -592,15 +514,33 @@
     <history-entry file="AdvertiseBookRepositoryImplTest_read - 2019.04.29 at 13h 43m 24s.xml">
       <configuration name="AdvertiseBookRepositoryImplTest.read" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AdvertiseBookRepositoryImplTest_read - 2019.04.29 at 13h 45m 37s.xml">
+      <configuration name="AdvertiseBookRepositoryImplTest.read" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdvertiseBookRepositoryImplTest_getAll - 2019.04.29 at 13h 46m 53s.xml">
+      <configuration name="AdvertiseBookRepositoryImplTest.getAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdvertiseBookRepositoryImplTest_delete - 2019.04.29 at 13h 47m 01s.xml">
+      <configuration name="AdvertiseBookRepositoryImplTest.delete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdvertiseBookRepositoryImplTest_update - 2019.04.29 at 13h 47m 08s.xml">
+      <configuration name="AdvertiseBookRepositoryImplTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AdvertiseBookRepositoryImplTest_create - 2019.04.29 at 13h 47m 20s.xml">
+      <configuration name="AdvertiseBookRepositoryImplTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookRepositoryImplTest_create - 2019.04.29 at 13h 54m 31s.xml">
+      <configuration name="BookRepositoryImplTest.create" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122729000" />
+    <option name="totallyTimeSpent" value="124317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -609,7 +549,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.95098037" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -650,105 +590,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Factory/UserSellerFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Factory/AdminFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserForgotLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Factory/ShortCourseFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Factory/AdminFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserRating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/IUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Factory/UserSellerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -890,20 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DatabaseImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/AdvertiseBookRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -952,27 +779,6 @@
             <element signature="e#858#859#0" expanded="true" />
             <element signature="e#885#886#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/ShortCourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/BookByAuthor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1084,14 +890,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/repository/AdvertiseBookRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        <state relative-caret-position="292">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/BookByAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#639#640#0" expanded="true" />
             <element signature="e#664#665#0" expanded="true" />
             <element signature="e#602#603#0" expanded="true" />
@@ -1102,17 +927,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/repository/AdvertiseBookRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/DatabaseImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        <state relative-caret-position="459">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookByCourseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookByAuthorRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserLoginRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserRegistrationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserForgotPasswordRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserSellerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserBuyerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserEmailVerificationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserDeregistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserForgotPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/UserForgotLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/ShortCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="89" selection-start-line="3" selection-start-column="89" selection-end-line="3" selection-end-column="89" />
         </state>
       </provider>
     </entry>
