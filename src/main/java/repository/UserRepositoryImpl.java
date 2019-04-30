@@ -44,7 +44,8 @@ public class UserRepositoryImpl implements UserRepository
     }// updating a user
 
     @Override
-    public void delete(User sort) {
+    public void delete(User sort)
+    {
 
     }
 
