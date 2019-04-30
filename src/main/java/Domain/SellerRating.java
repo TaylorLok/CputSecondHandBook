@@ -1,14 +1,12 @@
 package Domain;
 
-import sun.plugin.dom.core.Comment;
-
 public class SellerRating implements ISellerRating
 {
     private String userName;
     private String surName;
     private String rating;
     private String advertDate;
-    private Comment comment;
+    private String comment;
 
     public SellerRating()
     {
@@ -44,7 +42,7 @@ public class SellerRating implements ISellerRating
         return advertDate;
     }
 
-    public Comment getComment()
+    public String getComment()
     {
         return comment;
     }
@@ -55,7 +53,7 @@ public class SellerRating implements ISellerRating
         private String surName;
         private String rating;
         private String advertDate;
-        private Comment comment;
+        private String comment;
 
 
         public Builder ()
@@ -87,7 +85,7 @@ public class SellerRating implements ISellerRating
             return this;
         }
 
-        public Builder getComment(Comment comment)
+        public Builder getComment(String comment)
         {
             this.comment = comment;
             return this;

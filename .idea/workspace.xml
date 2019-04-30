@@ -2,45 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Factory/SellerRatingFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Factory/UserAccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/SellerRatingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/SellerRatingRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/SellerRatingFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/UserAccountFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repository/SellerRatingRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/IUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Manage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/SellerRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/SellerRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/UserBuyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/UserBuyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/BookFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/BookFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Factory/BookFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Factory/BookFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Admin$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Admin$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/IUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Manage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Manage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Search.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/SellerRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/SellerRating.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/User$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/UserAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/UserAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/UserBuyer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/UserBuyer$Builder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/UserBuyer$Builder$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/UserBuyer$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/UserBuyer$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/UserBuyer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/UserBuyer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Factory/BookFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Factory/BookFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AdminRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AdminRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Factory/BookFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Factory/BookFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/BookRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/repository/BookRepositoryImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/SellerRatingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/SellerRatingFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/SellerRatingRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/SellerRatingRepositoryImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,14 +36,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Domain/SellerRating.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="544">
+              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding>
                 <element signature="e#866#867#0" expanded="true" />
                 <element signature="e#896#897#0" expanded="true" />
                 <element signature="class#Builder#0;class#SellerRating#0" />
                 <element signature="method#toString#0;class#SellerRating#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -93,22 +69,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/repository/SellerRatingRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#324#325#0" expanded="true" />
                 <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
                 <element signature="e#390#391#0" expanded="true" />
                 <element signature="e#417#418#0" expanded="true" />
                 <element signature="e#886#887#0" expanded="true" />
                 <element signature="e#913#914#0" expanded="true" />
                 <element signature="e#968#969#0" expanded="true" />
                 <element signature="e#995#996#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/repository/SellerRatingRepositoryImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding>
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,9 +122,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -147,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Factory/UserRegistrationFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Factory/UserSellerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/AdvertiseBookRepository.java" />
@@ -184,8 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Domain/Manage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/Admin.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/Search.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Domain/SellerRating.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/UserBuyer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/java/Domain/User.java" />
@@ -198,6 +183,9 @@
         <option value="$PROJECT_DIR$/src/main/java/repository/ISellerRating.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/SellerRatingRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/SellerRatingRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Domain/SellerRating.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java" />
+        <option value="$PROJECT_DIR$/src/test/java/repository/SellerRatingRepositoryImplTest.java" />
       </list>
     </option>
   </component>
@@ -317,7 +305,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556649421150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556651139159" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/FBLT-master" />
@@ -331,8 +319,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="Factory" />
       <recent name="repository" />
+      <recent name="Factory" />
       <recent name="Domain" />
       <recent name="za.co.cput.ac.Projects.Factory" />
     </key>
@@ -367,23 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SellerRatingFactoryTest">
-    <configuration name="BookFactoryTest.getBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Factory" />
-      <option name="MAIN_CLASS_NAME" value="Factory.BookFactoryTest" />
-      <option name="METHOD_NAME" value="getBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SellerRatingRepositoryImplTest.update">
     <configuration name="Projects.getUser" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -432,6 +404,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SellerRatingRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.SellerRatingRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SellerRatingRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.SellerRatingRepositoryImplTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserAccountFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -447,37 +451,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAccountFactoryTest.getUserAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Factory" />
-      <option name="MAIN_CLASS_NAME" value="Factory.UserAccountFactoryTest" />
-      <option name="METHOD_NAME" value="getUserAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.Projects.getUser" />
-      <item itemvalue="JUnit.BookFactoryTest.getBook" />
-      <item itemvalue="JUnit.UserAccountFactoryTest.getUserAccount" />
       <item itemvalue="JUnit.UserAccountFactoryTest" />
       <item itemvalue="JUnit.SellerRatingFactoryTest.getSellerRating" />
       <item itemvalue="JUnit.SellerRatingFactoryTest" />
+      <item itemvalue="JUnit.SellerRatingRepositoryImplTest.create" />
+      <item itemvalue="JUnit.SellerRatingRepositoryImplTest.update" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SellerRatingRepositoryImplTest.update" />
+        <item itemvalue="JUnit.SellerRatingRepositoryImplTest.create" />
         <item itemvalue="JUnit.SellerRatingFactoryTest" />
         <item itemvalue="JUnit.SellerRatingFactoryTest.getSellerRating" />
         <item itemvalue="JUnit.UserAccountFactoryTest" />
-        <item itemvalue="JUnit.UserAccountFactoryTest.getUserAccount" />
-        <item itemvalue="JUnit.BookFactoryTest.getBook" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +490,7 @@
       <workItem from="1556301488499" duration="13817000" />
       <workItem from="1556469821444" duration="23426000" />
       <workItem from="1556534144904" duration="12106000" />
-      <workItem from="1556635849620" duration="12921000" />
+      <workItem from="1556635849620" duration="14634000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
@@ -561,7 +549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143641000" />
+    <option name="totallyTimeSpent" value="145354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -617,13 +605,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserLoginRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/UserRegistrationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -996,30 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/ISellerRatingRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/SellerRating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="class#Builder#0;class#SellerRating#0" />
-            <element signature="method#toString#0;class#SellerRating#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,19 +1018,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/SellerRatingRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#324#325#0" expanded="true" />
             <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
             <element signature="e#390#391#0" expanded="true" />
             <element signature="e#417#418#0" expanded="true" />
             <element signature="e#886#887#0" expanded="true" />
             <element signature="e#913#914#0" expanded="true" />
             <element signature="e#968#969#0" expanded="true" />
             <element signature="e#995#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/SellerRating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="class#Builder#0;class#SellerRating#0" />
+            <element signature="method#toString#0;class#SellerRating#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain/ISellerRating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/repository/SellerRatingRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
           </folding>
         </state>
       </provider>

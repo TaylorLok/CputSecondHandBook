@@ -26,7 +26,8 @@ public class SellerRatingRepositoryImpl implements SellerRatingRepository
     @Override
     public SellerRating create(SellerRating sort)
     {
-        return null;
+        this.seller.add(sort);
+        return sort;
     }
 
     @Override

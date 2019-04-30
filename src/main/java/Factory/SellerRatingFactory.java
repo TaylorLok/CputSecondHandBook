@@ -1,11 +1,10 @@
 package Factory;
 
 import Domain.SellerRating;
-import sun.plugin.dom.core.Comment;
 
 public class SellerRatingFactory
 {
-    public static SellerRating getSellerRating(String userName,String surName,String rating,String advertDate, Comment comment)
+    public static SellerRating getSellerRating(String userName, String surName, String rating, String advertDate, String comment)
     {
         return new SellerRating.Builder()
                                .getUserName(userName)
