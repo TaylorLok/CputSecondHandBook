@@ -119,7 +119,8 @@ public class Book implements IBookFactory
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "domainBook{" + "bookTitle='" + bookTitle +
                 '\'' + ", bookDescription='" + bookDescription +
                 '\'' + ", bookPrice=" + bookPrice + ", publisher='"

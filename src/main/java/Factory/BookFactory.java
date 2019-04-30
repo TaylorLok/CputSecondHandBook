@@ -21,7 +21,8 @@ public class BookFactory extends Book implements IBookFactory
         return factory;
     }
 
-    public Book getBook(Map<String, String> input) {
+    public Book getBook(Map<String, String> input)
+    {
 
         Book book = new Book.Builder().build();
 

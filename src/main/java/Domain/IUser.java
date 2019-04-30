@@ -14,4 +14,9 @@ public interface IUser
     int getTelNumber();
 
 
+    String getStatus();
+
+
+    String getCreationDate();
+
 }

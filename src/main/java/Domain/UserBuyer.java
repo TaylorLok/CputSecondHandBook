@@ -58,12 +58,18 @@ public abstract class UserBuyer implements Search
 
         public UserBuyer build()
         {
-            return new UserBuyer()
+            return new UserBuyer(this)
             {
                 @Override
                 public String getBook()
                 {
-                    return search;
+                    return String.valueOf(this);
+                }
+
+                @Override
+                public String getUser()
+                {
+                    return String.valueOf(this);
                 }
             };
         }

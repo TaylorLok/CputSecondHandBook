@@ -49,6 +49,16 @@ public class User implements IUser
         return telNumber;
     }
 
+    @Override
+    public String getStatus() {
+        return String.valueOf(this);
+    }
+
+    @Override
+    public String getCreationDate() {
+        return String.valueOf(this);
+    }
+
     public static class Builder
     {
         private String name;

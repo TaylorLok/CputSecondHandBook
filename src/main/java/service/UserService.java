@@ -2,8 +2,14 @@ package service;
 
 import Domain.User;
 
-public class UserService implements IService<User, String> {
-    //Set<User> getAll();
+import java.util.Set;
+
+public class UserService implements IService<User, String>
+{
+    Set<User> getAll()
+    {
+        return null;
+   }
 
     @Override
     public User create(User user) {

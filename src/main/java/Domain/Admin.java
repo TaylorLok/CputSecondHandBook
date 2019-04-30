@@ -2,7 +2,7 @@ package Domain;
 
 import java.util.Objects;
 
-public class Admin
+public class Admin implements Manage
 {
     private String permission;
 
@@ -19,6 +19,24 @@ public class Admin
     public String getPermission()
     {
         return permission;
+    }
+
+    @Override
+    public String getUser()
+    {
+        return String.valueOf(this);
+    }
+
+    @Override
+    public String manageBook()
+    {
+        return String.valueOf(this);
+    }
+
+    @Override
+    public String manageAdvert()
+    {
+        return String.valueOf(this);
     }
 
     public static class Builder
