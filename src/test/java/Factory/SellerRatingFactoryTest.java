@@ -18,7 +18,7 @@ public class SellerRatingFactoryTest
                                 .getSurName("Lokombe")
                                 .getAdvertDate("30/04/2019")
                                 .getRating("*****")
-                                //.getComment("this was very good")
+                                .getComment("its very good")
                                .build();
 
     }

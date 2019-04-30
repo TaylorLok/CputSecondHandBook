@@ -1,33 +1,43 @@
 package repository;
 
-import Domain.SellerRating;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.Set;
 
 public class SellerRatingRepositoryImplTest
 {
-    SellerRating sell;
+   Set<String> values;
+
+    SellerRatingRepository selrepo;
 
 
     @Before
     public void setUp() throws Exception
     {
-        sell = new SellerRating.Builder()
-                               .getSurName("Taylor")
-                               .getUserName("Lokombe")
-                               .getAdvertDate("30/04/2019")
-                               .getRating("*****")
-                               .getComment("very good")
-                               .build();
+        selrepo = SellerRatingRepositoryImpl.getRepository();
 
+      // selrepo = new HashMap<String,String>();
+
+        values.add("Taylor");
+        values.add("Lokombe");
+        values.add("*****");
+        values.add("good");
+        values.add("nice try");
     }
+
+
+
 
     @Test
     public void create()
     {
-        System.out.println(sell.toString());
+        //selrepo = SellerRatingFactory.getSellerRating(values,"lokombe","*****","30/04/2019","nice try");
+        //selrepo.create(null);
+
+
+        //Assert.assertEquals("Name",selrepo.getSurName(),"Taylor");
+        System.out.println(selrepo.toString());
     }
 
     @Test
@@ -37,14 +47,18 @@ public class SellerRatingRepositoryImplTest
     }
 
     @Test
-    public void delete() {
+    public void delete()
+    {
+
     }
 
     @Test
-    public void read() {
+    public void read()
+    {
     }
 
     @Test
-    public void getAll() {
+    public void getAll()
+    {
     }
 }
