@@ -1,5 +1,6 @@
 package repository;
 
+import Domain.SellerRating;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -7,23 +8,18 @@ import java.util.Set;
 
 public class SellerRatingRepositoryImplTest
 {
-   Set<String> values;
+    private SellerRating sellerRating;
+    private SellerRatingRepository repository;
 
-    SellerRatingRepository selrepo;
+   Set<String> values;
 
 
     @Before
     public void setUp() throws Exception
     {
-        selrepo = SellerRatingRepositoryImpl.getRepository();
+        repository = SellerRatingRepositoryImpl.getRepository();
+        //this.values = new SellerRatingFactory.getSellerRating("Taylor","Lokombe","*****","good","try");
 
-      // selrepo = new HashMap<String,String>();
-
-        values.add("Taylor");
-        values.add("Lokombe");
-        values.add("*****");
-        values.add("good");
-        values.add("nice try");
     }
 
 
@@ -32,12 +28,7 @@ public class SellerRatingRepositoryImplTest
     @Test
     public void create()
     {
-        //selrepo = SellerRatingFactory.getSellerRating(values,"lokombe","*****","30/04/2019","nice try");
-        //selrepo.create(null);
 
-
-        //Assert.assertEquals("Name",selrepo.getSurName(),"Taylor");
-        System.out.println(selrepo.toString());
     }
 
     @Test

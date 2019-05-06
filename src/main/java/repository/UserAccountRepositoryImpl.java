@@ -22,10 +22,7 @@ public class UserAccountRepositoryImpl implements UserAccountRepository
         return repository;
     }
 
-    @Override
-    public Set<UserAccount> getAll() {
-        return null;
-    }
+
 
     @Override
     public UserAccount create(UserAccount sort)
@@ -58,4 +55,9 @@ public class UserAccountRepositoryImpl implements UserAccountRepository
         return sort;
     }
 
+    @Override
+    public Set<UserAccount> getAll()
+    {
+        return userAcc;
+    }
 }

@@ -16,7 +16,7 @@ public class User implements IUser
         this.telNumber = telNumber;
     }
 
-    protected User()
+    public User()
     {
 
     }
@@ -87,6 +87,16 @@ public class User implements IUser
         public Builder telNumber(int telNumber)
         {
             this.telNumber = telNumber;
+            return this;
+        }
+
+        public Builder copy(String name, String surname,String studentNumber,int telNumber)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.studentNumber = studentNumber;
+            this.telNumber =telNumber;
+
             return this;
         }
 

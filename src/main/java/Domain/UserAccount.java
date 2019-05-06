@@ -5,7 +5,7 @@ public class UserAccount
    private String creationDate;
    private String status;
 
-   protected UserAccount()
+   public UserAccount()
    {
 
    }
@@ -46,10 +46,19 @@ public class UserAccount
             return this;
         }
 
+        public Builder copy(UserAccount savedUserAccount)
+        {
+            this.status = status;
+            this.creationDate = creationDate;
+            return this;
+        }
+
         public UserAccount build()
         {
             return new UserAccount(this);
         }
+
+
     }
 
     @Override
