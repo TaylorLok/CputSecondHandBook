@@ -16,7 +16,7 @@ public class UserFactoryTest {
                          .name("name")
                          .surname("Surname")
                          .studentNumber("studentNumber")
-                        // .telNumber('telNumber')
+                           .telNumber("telNumber")
                          .build();
 
 
@@ -27,17 +27,21 @@ public class UserFactoryTest {
     public void getUser()
     {
       user = new User.Builder()
-                     .studentNumber("studentNumber")
-                     .name("Taylor")
-                     .surname("surname")
-                     .build();
+              .name("Taylor")
+              .surname("Lokombe")
+              .studentNumber("214291324")
+              .telNumber("0780140396")
+              .build();
+
+
 
 
         Assert.assertNotNull(user);
         Assert.assertEquals("Taylor", user.getName());
         Assert.assertEquals("Lokombe",user.getSurname());
         Assert.assertEquals("214291324",user.getStudentNumber());
+        Assert.assertEquals("0780140396",user.getTelNumber());
 
-        Assert.assertTrue(user.getName().equals("Lokombe"));
+        System.out.println(toString());
     }
 }

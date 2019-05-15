@@ -6,9 +6,9 @@ public class User implements IUser
     private String name;
     private String surname;
     private String studentNumber;
-    private int telNumber;
+    private String telNumber;
 
-    public User(String name, String surname, String studentNumber, int telNumber)
+    public User(String name, String surname, String studentNumber, String telNumber)
     {
         this.name = name;
         this.surname = surname;
@@ -44,7 +44,7 @@ public class User implements IUser
         return studentNumber;
     }
 
-    public int getTelNumber()
+    public String getTelNumber()
     {
         return telNumber;
     }
@@ -64,7 +64,7 @@ public class User implements IUser
         private String name;
         private String surname;
         private String studentNumber;
-        private int telNumber;
+        private String telNumber;
 
         public Builder name(String name)
         {
@@ -84,13 +84,13 @@ public class User implements IUser
             return this;
         }
 
-        public Builder telNumber(int telNumber)
+        public Builder telNumber(String telNumber)
         {
             this.telNumber = telNumber;
             return this;
         }
 
-        public Builder copy(String name, String surname,String studentNumber,int telNumber)
+        public Builder copy(String name, String surname,String studentNumber,String telNumber)
         {
             this.name = name;
             this.surname = surname;
@@ -107,8 +107,8 @@ public class User implements IUser
     }
 
     @Override
-    public String toString() {
-        return "User{" + "name='" + name + '\'' + ", surname='" + surname +
-                '\'' + ", studentNumber='" + studentNumber + '\'' + ", telNumber=" + telNumber + '}';
+    public String toString()
+    {
+        return "User{" + "name='" + name + '\'' + ", surname='" + surname + '\'' + ", studentNumber='" + studentNumber + '\'' + ", telNumber='" + telNumber + '\'' + '}';
     }
 }

@@ -1,4 +1,6 @@
 package repository;
 
-public interface BookByAuthorRepository {
+public interface BookByAuthorRepository
+{
+
 }

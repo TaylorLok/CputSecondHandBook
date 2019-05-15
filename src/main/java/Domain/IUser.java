@@ -11,7 +11,7 @@ public interface IUser
     String getStudentNumber();
 
 
-    int getTelNumber();
+    String getTelNumber();
 
 
     String getStatus();

@@ -8,8 +8,6 @@ import org.junit.Test;
 
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class AdminRepositoryImplTest
 {
     private AdminRepository repository;
@@ -26,6 +24,8 @@ public class AdminRepositoryImplTest
     public void create()
     {
         Assert.assertEquals(repository.create(admin),repository.create(admin));
+
+        System.out.println(toString());
     }
 
     @Test

@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
@@ -24,17 +25,19 @@ public class UserRepositoryImplTest
     public void setUp() throws Exception
     {
         repository = UserRepositoryImpl.getRepository();
-        user = UserFactory.getUser("Taylor","Lokombe","214291324",07);
+        user = UserFactory.getUser("Taylor","Lokombe","214291324","0780140396");
     }
 
 
+
     @Test
-    public void create()
-    {
-        User created = this.repository.create(this.user);
-        System.out.println("In create, a user is been created = " + created);
-        getAll();
-        Assert.assertSame(created, this.user);
+    public void UserCreateTest() throws IOException {
+        User user = UserFactory.getUser("John"," Doh","214291324", "0780140396");
+        User result = repository.create(user);
+         result.getStudentNumber();
+        Assert.assertNotNull(user);
+
+        System.out.println(toString());
 
     }
 
@@ -43,12 +46,12 @@ public class UserRepositoryImplTest
     public void update()
     {
         String name ="Junior";
-        System.out.println("In update, about_to_updated = " + user);
+        System.out.println("user name is about to be updated = " + name);
         User updated = this.repository.update(user);
         System.out.println("In update, updated = " + updated);
-        Assert.assertSame(name, updated.getStatus());
-        getAll();
-        Assert.assertEquals(repository.update(user),repository.update(user));
+        Assert.assertEquals(name, updated.getName());
+        //getAll();
+
 
     }
 
@@ -56,7 +59,10 @@ public class UserRepositoryImplTest
     public void read()
     {
 
+        User student = repository.read(user);
+        Assert.assertNotNull(student);
 
+        System.out.println(toString());
     }
 
     @Test(expected = NoSuchElementException.class)

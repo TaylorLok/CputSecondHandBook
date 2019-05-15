@@ -2,17 +2,16 @@ package repository;
 
 import Domain.User;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class UserRepositoryImpl implements UserRepository
 {
     private static UserRepositoryImpl repository = null;
-    private Set<User> users;
+    private Map<String ,User> users;
 
     private UserRepositoryImpl()
     {
-        this.users = new HashSet<>();
+        this.users = new HashMap<>();
 
     }
 
@@ -24,39 +23,48 @@ public class UserRepositoryImpl implements UserRepository
 
     public User create(User user)
     {
-        this.users.add(user);
+        this.users.put(user.getName(),user);
+        this.users.put(user.getSurname(),user);
+        this.users.put(user.getStudentNumber(),user);
+        this.users.put(String.valueOf(user.getTelNumber()),user);
+        this.users.put(user.getCreationDate(),user);
+        this.users.put(user.getStatus(),user);
         return user;
     } //adding a new user
 
-    public User read(String name)
-    {
-        return null;
-    }//reading user data
-
-    public void delete(String name)
-    {
-
-    }
-
     public User update(User user)
     {
+
+        this.users.replace(user.getName(),user);
+        this.users.replace(user.getSurname(),user);
+        this.users.replace(user.getName(),user);
+        this.users.replace(user.getSurname(),user);
+        this.users.replace(user.getStudentNumber(),user);
+        this.users.replace(String.valueOf(user.getTelNumber()),user);
+        this.users.replace(user.getCreationDate(),user);
+        this.users.replace(user.getStatus(),user);
         return user;
     }// updating a user
 
     @Override
-    public void delete(User sort)
+    public void delete(User user)
     {
-
+        this.users.remove(user);
     }
 
     @Override
-    public User read(User sort) {
-        return null;
+    public User read(User user)
+    {
+        this.users.get(user);
+         return user ;
     }
 
     @Override
     public Set<User> getAll()
     {
-        return this.users;
+        Collection<User> users = this.users.values();
+        Set<User> set = new HashSet<>();
+        set.addAll(users);
+        return set;
     }
 }

@@ -1,4 +1,6 @@
 package repository;
 
-public interface BookByCourseRepository {
+public interface BookByCourseRepository
+{
+
 }

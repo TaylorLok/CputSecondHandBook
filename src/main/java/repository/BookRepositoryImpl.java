@@ -2,17 +2,16 @@ package repository;
 
 import Domain.Book;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class BookRepositoryImpl implements BookRepository
 {
     private static BookRepositoryImpl repository =null;
-    private Set<Book> books;
+    private Map<String,Book> books;
 
     private BookRepositoryImpl()
     {
-        this.books = new HashSet<>();
+        this.books = new HashMap<>();
     }
 
     public static BookRepositoryImpl getRepository()
@@ -22,39 +21,51 @@ public class BookRepositoryImpl implements BookRepository
         return repository;
     }
 
-    public Book create(Book e)
+    public Book create(Book book)
     {
-        this.books.add(e);
-        return e;
+        this.books.put(book.getBookTitle(),book);
+        this.books.put(book.getBookDescription(),book);
+        this.books.put(book.getBookLanguage(),book);
+        this.books.put(book.getPublisher(),book);
+        this.books.put(String.valueOf(book.getBookPrice()),book);
+        this.books.put(book.getPublicationDate(),book);
+
+        return book;
     }
 
-    public Book read(String title)
+    public Book update(Book book)
     {
-        return null;
-    }
+        this.books.replace(book.getBookTitle(),book);
+        this.books.replace(book.getBookDescription(),book);
+        this.books.replace(book.getBookLanguage(),book);
+        this.books.replace(book.getPublisher(),book);
+        this.books.replace(String.valueOf(book.getBookPrice()),book);
+        this.books.replace(book.getPublicationDate(),book);
 
-    public  void delete(String title)
-    {
-
-    }
-
-    public Book update(Book e)
-    {
-        return e;
+        return book;
     }
 
     @Override
-    public void delete(Book sort) {
-
+    public void delete(Book book)
+    {
+        this.books.remove(books);
     }
 
     @Override
-    public Book read(Book sort) {
-        return null;
+    public Book read(Book sort)
+    {
+        this.books.get(books);
+
+        return books.get(books);
     }
+
 
     public Set<Book> getAll()
     {
-        return this.books;
+        Collection<Book> book = this.books.values();
+        Set<Book> set = new HashSet<>();
+        set.addAll(book);
+        return set;
     }
+
 }

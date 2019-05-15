@@ -8,8 +8,6 @@ import org.junit.Test;
 
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class AdvertiseBookRepositoryImplTest
 {
     private AdvertiseBookRepository repository;
@@ -33,6 +31,8 @@ public class AdvertiseBookRepositoryImplTest
     {
         Assert.assertNotNull(advert);
       Assert.assertEquals("Banele",repository.update(advert));
+
+      toString();
     }
 
     @Test

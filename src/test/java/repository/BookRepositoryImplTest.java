@@ -13,6 +13,13 @@ public class BookRepositoryImplTest
     private BookRepository repository;
     private Book book;
 
+    private Book savedBooks ()
+    {
+        Set<Book> books = this.repository.getAll();
+        return (Book) books;
+    }
+
+
     @Before
     public void setUp() throws Exception
     {
@@ -21,17 +28,10 @@ public class BookRepositoryImplTest
     }
 
     @Test
-    public void getRepository()
-    {
-
-    }
-
-    @Test
     public void create()
     {
-        //Assert.assertNotNull(book);
-        //Assert.assertEquals("Book",book.getBookTitle());
-       Assert.assertEquals(repository.create(book),repository.create(book));
+       //this.book.put(book.getBookTitle(),book);
+
     }
 
     @Test
