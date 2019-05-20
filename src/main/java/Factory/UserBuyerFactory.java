@@ -4,13 +4,16 @@ import Domain.UserBuyer;
 
 public class UserBuyerFactory
 {
-   public static UserBuyer getBuyer(String search)
+   public static UserBuyer getBuyer(String name,String surname)
    {
        return new UserBuyer.Builder()
-                          //.search(search)
+                           .getName(name)
+                           .getSurname(surname)
                            .build();
 
+
    }
+
 
 
 }

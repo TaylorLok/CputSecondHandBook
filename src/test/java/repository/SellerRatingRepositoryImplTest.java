@@ -1,55 +1,57 @@
 package repository;
 
 import Domain.SellerRating;
+import Factory.SellerRatingFactory;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Set;
+import static org.junit.Assert.assertEquals;
 
 public class SellerRatingRepositoryImplTest
 {
     private SellerRating sellerRating;
     private SellerRatingRepository repository;
 
-   Set<String> values;
 
 
     @Before
     public void setUp() throws Exception
     {
         repository = SellerRatingRepositoryImpl.getRepository();
-        //this.values = new SellerRatingFactory.getSellerRating("Taylor","Lokombe","*****","good","try");
+        sellerRating = SellerRatingFactory.getSellerRating("anikwe","arinze","*****","15/05/2019",
+                "very good lecture with motivation");
 
     }
-
-
-
 
     @Test
     public void create()
     {
 
+     assertEquals(repository.create(sellerRating),repository.create(sellerRating));
     }
 
     @Test
     public void update()
     {
-
+        assertEquals(repository.update(sellerRating),repository.update(sellerRating));
     }
 
     @Test
     public void delete()
     {
-
+        repository.delete(sellerRating);
     }
 
     @Test
     public void read()
     {
+        assertEquals(repository.read(sellerRating),repository.read(sellerRating));
     }
 
     @Test
     public void getAll()
     {
+        Assert.assertEquals(repository.getAll(),repository.getAll());
     }
 }

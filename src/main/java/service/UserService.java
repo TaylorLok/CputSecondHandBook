@@ -4,30 +4,15 @@ import Domain.User;
 
 import java.util.Set;
 
-public class UserService implements IService<User, String>
+public interface UserService extends IService<User, String>
 {
-    Set<User> getAll()
-    {
-        return null;
-   }
+    void delete(User user);
 
-    @Override
-    public User create(User user) {
-        return null;
-    }
+    User read(User user);
 
-    @Override
-    public User update(User user) {
-        return null;
-    }
+    User create(User user);
 
-    @Override
-    public void delete(String s) {
+    User update(User user);
 
-    }
-
-    @Override
-    public User read(String s) {
-        return null;
-    }
+    Set<User> getAll();
 }

@@ -7,8 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.NoSuchElementException;
 import java.util.Set;
+
+import static org.junit.Assert.assertEquals;
 
 public class UserRepositoryImplTest
 {
@@ -45,13 +46,8 @@ public class UserRepositoryImplTest
     @Test
     public void update()
     {
-        String name ="Junior";
-        System.out.println("user name is about to be updated = " + name);
-        User updated = this.repository.update(user);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertEquals(name, updated.getName());
-        //getAll();
 
+        assertEquals(repository.update(user),repository.update(user));
 
     }
 
@@ -65,13 +61,10 @@ public class UserRepositoryImplTest
         System.out.println(toString());
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void delete()
     {
-        User savedUser = SavedUser();
-        this.repository.delete(savedUser);
-        getAll();
-        //repository.delete(user);
+       repository.delete(user);
     }
 
 

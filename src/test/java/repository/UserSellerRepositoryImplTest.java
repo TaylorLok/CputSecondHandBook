@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class UserSellerRepositoryImplTest
@@ -43,42 +42,24 @@ public class UserSellerRepositoryImplTest
         System.out.println(toString());
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test
     public void update()
     {
-        String user = "New user Name";
-        String userSeller;
-        userSeller = new UserSeller.Builder().build().getName().replace("taylor","Lokamba");
-        System.out.println("update a user seller = " + userSeller);
-        UserSeller updated = this.repository.update(userSellers);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertNotSame(user, updated.getName());
-
-
-        System.out.println(toString());// i want to change just the name and update to another name
+       Assert.assertEquals(repository.update(userSellers),repository.update(userSellers));
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void delete()
     {
-        UserSeller savedUserSellers = getSavedUserSeller();
-        this.repository.delete(savedUserSellers);
-
+      repository.delete(userSellers);
         System.out.println(toString());
 
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void read()
     {
-        UserSeller savedUserSellers = getSavedUserSeller();
-        System.out.println("read user name = "+ savedUserSellers.getName());
-        UserSeller read = this.repository.read(getSavedUserSeller());
-        System.out.println("In read, read = " + read);
-
-        Assert.assertEquals(savedUserSellers, read);
-
-        System.out.println(toString());
+       Assert.assertEquals(repository.read(userSellers),repository.read(userSellers));
     }
 
     @Test

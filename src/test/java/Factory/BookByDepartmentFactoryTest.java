@@ -24,7 +24,10 @@ public class BookByDepartmentFactoryTest
 
         Assert.assertNotNull(bookdpt);
         Assert.assertEquals("Anatomy of life book",bookdpt.getDptOfHealth());
-        Assert.assertEquals("information design book",bookdpt.getDptOfAppliedScience());
-        Assert.assertEquals("English book for teaching",bookdpt.getDptOfEducation());
+        Assert.assertEquals("information Design book",bookdpt.getDptOfAppliedScience());
+        Assert.assertEquals("English Book for Teaching",bookdpt.getDptOfEducation());
+        Assert.assertEquals("How to program book",bookdpt.getDptOfEngineering());
+        Assert.assertEquals("management book",bookdpt.getDptOfBusiness());
+
     }
 }

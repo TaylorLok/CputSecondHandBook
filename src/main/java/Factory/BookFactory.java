@@ -81,4 +81,17 @@ public class BookFactory extends Book implements IBookFactory
 
 
     }
+
+    public static Book getNewBook(String bookTitle,String bookDescription,Double bookPrice,String publisher,String publicationDate,String bookLanguage)
+    {
+        return new Book.Builder()
+                    .bookTitle(bookTitle)
+                    .bookDescription(bookDescription)
+                    .bookLanguage(bookLanguage)
+                    .bookPrice(bookPrice)
+                    .publisher(publisher)
+                     .publicationDate(publicationDate)
+                    .build();
+    }
+
 }

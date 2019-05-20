@@ -2,55 +2,64 @@ package repository;
 
 import Domain.SellerRating;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class SellerRatingRepositoryImpl implements SellerRatingRepository
 {
-    private static SellerRatingRepository repository = null;
-    private Set<SellerRating> seller;
+    private static SellerRatingRepository repository;
+    private Map<String,SellerRating> seller;
 
     private SellerRatingRepositoryImpl()
     {
-        this.seller = new HashSet<>();
+        this.seller = new HashMap<>();
     }
 
-    protected static SellerRatingRepositoryImpl getRepository()
+    public static SellerRatingRepositoryImpl getRepository()
     {
         if(repository==null)repository = new SellerRatingRepositoryImpl();
-        return getRepository();
+        return (SellerRatingRepositoryImpl) repository;
     }
 
 
-
     @Override
-    public SellerRating create(SellerRating sort)
+    public SellerRating create(SellerRating selRat)
     {
-        this.seller.add(sort);
-        return sort;
+        this.seller.put(selRat.getUserName(),selRat);
+        this.seller.put(selRat.getSurName(),selRat);
+        this.seller.put(selRat.getRating(),selRat);
+        this.seller.put(selRat.getComment(),selRat);
+        return selRat;
     }
 
     @Override
-    public SellerRating update(SellerRating sort)
+    public SellerRating update(SellerRating selRat)
     {
-        return null;
+        this.seller.replace(selRat.getUserName(),selRat);
+        this.seller.replace(selRat.getSurName(),selRat);
+        this.seller.replace(selRat.getRating(),selRat);
+        this.seller.replace(selRat.getComment(),selRat);
+        return selRat;
     }
 
     @Override
-    public void delete(SellerRating sort)
+    public void delete(SellerRating selRat)
     {
-
+        this.seller.remove(selRat);
     }
 
     @Override
-    public SellerRating read(SellerRating sort)
+    public SellerRating read(SellerRating selRat)
     {
-        return null;
+        this.seller.get(selRat);
+        return selRat;
     }
 
     @Override
     public Set<SellerRating> getAll()
     {
-        return null;
+        Collection<SellerRating> sellerRatings = this.seller.values();
+        Set<SellerRating> set = new HashSet<>();
+        set.addAll(sellerRatings);
+        return set;
     }
 }

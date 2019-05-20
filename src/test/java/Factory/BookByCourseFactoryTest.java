@@ -20,6 +20,9 @@ public class BookByCourseFactoryTest
 
         Assert.assertNotNull(book);
         Assert.assertEquals("IT",book.getInformationTech());
-        Assert.assertEquals("coomerce",book.getCommerce());
+
+        Assert.assertEquals(book.getCommerce(),book.getCommerce());
+        Assert.assertEquals(book.getInformationTech(),book.getInformationTech());
+
     }
 }

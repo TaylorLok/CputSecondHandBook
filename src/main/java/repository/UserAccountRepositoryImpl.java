@@ -2,18 +2,17 @@ package repository;
 
 import Domain.UserAccount;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class UserAccountRepositoryImpl implements UserAccountRepository
 {
 
     private static UserAccountRepositoryImpl repository = null;
-    private Set<UserAccount> userAcc;
+    private Map<String,UserAccount> userAcc;
 
     private UserAccountRepositoryImpl()
     {
-        this.userAcc = new HashSet<>();
+        this.userAcc = new HashMap<>();
     }
 
     public static UserAccountRepositoryImpl getRepository()
@@ -25,39 +24,40 @@ public class UserAccountRepositoryImpl implements UserAccountRepository
 
 
     @Override
-    public UserAccount create(UserAccount sort)
+    public UserAccount create(UserAccount account)
     {
-        this.userAcc.add(sort);
-        return sort;
+        this.userAcc.put(account.getCreationDate(),account);
+        this.userAcc.put(account.getStatus(),account);
+        return account;
     }
 
     @Override
-    public UserAccount update(UserAccount sort)
+    public UserAccount update(UserAccount account)
     {
-        this.userAcc.add(sort);
-        return sort;
+        this.userAcc.replace(account.getCreationDate(),account);
+        this.userAcc.replace(account.getStatus(),account);
+        return account;
     }
 
     @Override
-    public void delete(UserAccount sort)
+    public void delete(UserAccount account)
     {
-       repository.userAcc.remove(sort);
-
+        this.userAcc.remove(account);
     }
 
     @Override
-    public UserAccount read(UserAccount sort)
+    public UserAccount read(UserAccount account)
     {
-        if(repository.userAcc.contains(sort))
-        {
-            return sort;
-        }
-        return sort;
+        this.userAcc.get(account);
+        return account;
     }
 
     @Override
     public Set<UserAccount> getAll()
     {
-        return userAcc;
+        Collection<UserAccount> accounts = this.userAcc.values();
+        Set<UserAccount> set = new HashSet<>();
+        set.addAll(accounts);
+        return set;
     }
 }

@@ -11,15 +11,14 @@ public class ShortCourseFactoryTest
     @Test
     public void getShortCourse()
     {
-        shortCourse = new ShortCourse.Builder()
-                               .build();
+        shortCourse = ShortCourseFactory.getShortCourseBooks("ccna1","ccna2","ccnp","cyber");
 
 
-        Assert.assertNotNull(shortCourse);
-        Assert.assertEquals("CCNA",shortCourse.getCcna1());
+
+        Assert.assertEquals("ccna1",shortCourse.getCcna1());
         Assert.assertEquals("ccnp",shortCourse.getCcnp());
-        Assert.assertEquals("ccn3",shortCourse.getCcna2());
-        Assert.assertEquals("cybersecurity",shortCourse.getCyberSecurity());
+      Assert.assertEquals("ccna2",shortCourse.getCcna2());
+        Assert.assertEquals("cyber",shortCourse.getCyberSecurity());
 
 
     }

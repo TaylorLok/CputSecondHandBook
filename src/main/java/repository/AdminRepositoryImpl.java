@@ -2,20 +2,19 @@ package repository;
 
 import Domain.Admin;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class AdminRepositoryImpl implements AdminRepository
 {
   private static AdminRepositoryImpl repository = null;
-  private Set<Admin> admins;// this is the data store
+  private Map<String,Admin> admins;// this is the data store
 
   private AdminRepositoryImpl()
   {
-      this.admins = new HashSet<>();
+      this.admins = new HashMap<>();
   }
 
-  protected static AdminRepositoryImpl getRepository()
+  public static AdminRepositoryImpl getRepository()
   {
       if(repository==null) repository = new AdminRepositoryImpl();
       return repository;
@@ -23,38 +22,43 @@ public class AdminRepositoryImpl implements AdminRepository
 
   public Admin create(Admin admin)
   {
-      this.admins.add(admin);
+      this.admins.put(admin.getUser(),admin);
+      this.admins.put(admin.getUser(),admin);
+      this.admins.put(admin.getPermission(),admin);
+      this.admins.put(admin.manageAdvert(),admin);
+      this.admins.put(admin.manageBook(),admin);
       return admin;
   }
 
-  public Admin read(String surname)
-  {
-      //here its require a for loop
-      return null;
-  }
-
-  public void delete(String surname)
-  {
-
-  }
 
   public Admin update(Admin admin)
   {
+      this.admins.replace(admin.getUser(),admin);
+      this.admins.replace(admin.getUser(),admin);
+      this.admins.replace(admin.getPermission(),admin);
+      this.admins.replace(admin.manageAdvert(),admin);
+      this.admins.replace(admin.manageBook(),admin);
       return admin;
   }
 
     @Override
-    public void delete(Admin sort) {
-
+    public void delete(Admin admin)
+    {
+       this.admins.remove(admin);
     }
 
     @Override
-    public Admin read(Admin sort) {
-        return null;
+    public Admin read(Admin admin)
+    {
+        this.admins.get(admin);
+        return admin;
     }
 
     public Set<Admin> getAll()
   {
-      return admins;
+      Collection<Admin> admins = this.admins.values();
+      Set<Admin> set = new HashSet<>();
+      set.addAll(admins);
+      return set;
   }
 }

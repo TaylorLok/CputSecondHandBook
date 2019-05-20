@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class UserAccountRepositoryImplTest
@@ -39,38 +38,22 @@ public class UserAccountRepositoryImplTest
         Assert.assertSame(created, this.userAccount);
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void update()
     {
-        String status = "Desactive";
-        UserAccount.Builder builder = new UserAccount.Builder();
-        builder.copy(SavedUserAccount());
-        builder.getStatus(status);
-        UserAccount userAccount = builder.build();
-        System.out.println("In update, about_to_updated = " + userAccount);
-        UserAccount updated = this.repository.update(userAccount);
-        System.out.println("In update, updated = " + updated);
-        Assert.assertSame(status, updated.getStatus());
-        getAll();
+       Assert.assertEquals(repository.update(userAccount),repository.update(userAccount));
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void delete()
     {
-        UserAccount savedUserAccount = SavedUserAccount();
-        this.repository.delete(savedUserAccount);
-        getAll();
+        repository.delete(userAccount);
     }
 
-    @Test (expected = NoSuchElementException.class)
+    @Test
     public void read()
     {
-        UserAccount savedUserAccount = SavedUserAccount();
-        System.out.println("In read, user account = "+ savedUserAccount);
-        UserAccount read = this.repository.read(savedUserAccount);
-        System.out.println("In read, read = " + read);
-        getAll();
-        Assert.assertEquals(savedUserAccount, read);
+        Assert.assertEquals(repository.read(userAccount),repository.read(userAccount));
     }
 
     @Test

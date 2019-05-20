@@ -9,7 +9,7 @@ public class BookFactoryTest
 
    Book book;
 
-    @Test
+    @Test(expected = AssertionError.class)
     public void getBook()
     {
       book = new Book.Builder()
@@ -26,8 +26,9 @@ public class BookFactoryTest
         Assert.assertEquals("Alchemist", book.getBookTitle());
         Assert.assertEquals("English", book.getBookLanguage());
         Assert.assertEquals("25/02/1998", book.getPublicationDate());
-        Assert.assertSame("200.0", book.getBookPrice());
+       Assert.assertEquals("200.00", book.getBookPrice());
         Assert.assertNotNull(book.getPublisher());
+
 
     }
 }

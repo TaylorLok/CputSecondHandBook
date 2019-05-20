@@ -1,10 +1,10 @@
 package service;
 
-public interface IService<TYPE,ID>
+public interface IService<Real,sort>
 {
-    TYPE create(TYPE type);
-    TYPE update(TYPE type);
-    void delete(ID id);
-    TYPE read(ID id);
+    Real create(Real type);
+    Real update(Real type);
+    void delete(Real id);
+    Real read(Real id);
 
 }//its interface because it can have several implementation of this service or repository

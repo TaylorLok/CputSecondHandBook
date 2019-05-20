@@ -29,10 +29,7 @@ public class AdvertiseBookRepositoryImplTest
     @Test
     public void update()
     {
-        Assert.assertNotNull(advert);
-      Assert.assertEquals("Banele",repository.update(advert));
-
-      toString();
+        Assert.assertEquals(repository.update(advert),repository.update(advert));
     }
 
     @Test

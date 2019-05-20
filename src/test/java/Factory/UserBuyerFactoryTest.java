@@ -2,18 +2,26 @@ package Factory;
 
 import Domain.UserBuyer;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class UserBuyerFactoryTest
 {
-    UserBuyer useB = new UserBuyer.Builder()
-                                  .build();
+    private UserBuyer userBuyer;
+
+
+    @Before
+    public void setUp() throws Exception
+    {
+        userBuyer = UserBuyerFactory.getBuyer("taylor","Lokamba");
+    }
 
     @Test
     public void getBuyer()
     {
-        Assert.assertNotNull(useB);
-        Assert.fail("Book");
-        Assert.assertEquals("search","title","title");
+
+        Assert.assertEquals("taylor",userBuyer.getName());
+        Assert.assertEquals("Lokamba",userBuyer.getSurname());
+
     }
 }

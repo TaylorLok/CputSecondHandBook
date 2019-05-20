@@ -2,18 +2,17 @@ package repository;
 
 import Domain.AdvertiseBook;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class AdvertiseBookRepositoryImpl implements AdvertiseBookRepository
 {
   private static AdvertiseBookRepositoryImpl repository = null;
-  private Set<AdvertiseBook> advertiseBooks;
+  private Map<String,AdvertiseBook> advertiseBooks;
 
 
   private AdvertiseBookRepositoryImpl()
   {
-      this.advertiseBooks = new HashSet<>();
+      this.advertiseBooks = new HashMap<>();
   }
 
   public static AdvertiseBookRepositoryImpl getRepository()
@@ -25,38 +24,44 @@ public class AdvertiseBookRepositoryImpl implements AdvertiseBookRepository
 
   public AdvertiseBook create(AdvertiseBook advertiseBook)
   {
-      this.advertiseBooks.add(advertiseBook);
+      this.advertiseBooks.put(advertiseBook.getUserName(),advertiseBook);
+      this.advertiseBooks.put(advertiseBook.getTitle(),advertiseBook);
+      this.advertiseBooks.put(String.valueOf(advertiseBook.getPrice()),advertiseBook);
+      this.advertiseBooks.put(String.valueOf(advertiseBook.isBuyOrSell()),advertiseBook);
+      this.advertiseBooks.put(advertiseBook.getDate(),advertiseBook);
       return advertiseBook;
   }
 
-  public AdvertiseBook read(String desc)
-  {
-      return null;
-  }
-
-  public void delete(String desc)
-  {
-
-  }
 
   public AdvertiseBook update(AdvertiseBook advertiseBook)
   {
+      this.advertiseBooks.replace(advertiseBook.getUserName(),advertiseBook);
+      this.advertiseBooks.replace(advertiseBook.getTitle(),advertiseBook);
+      this.advertiseBooks.replace(String.valueOf(advertiseBook.getPrice()),advertiseBook);
+      this.advertiseBooks.replace(String.valueOf(advertiseBook.isBuyOrSell()),advertiseBook);
+      this.advertiseBooks.replace(advertiseBook.getDate(),advertiseBook);
       return advertiseBook;
   }
 
-    @Override
-    public void delete(AdvertiseBook sort) {
-
+    public void delete(AdvertiseBook advertiseBook)
+    {
+     this.advertiseBooks.remove(advertiseBook);
     }
 
-    @Override
-    public AdvertiseBook read(AdvertiseBook sort) {
-        return null;
+
+    public AdvertiseBook read(AdvertiseBook advertiseBook)
+    {
+        this.advertiseBooks.get(advertiseBook);
+        return advertiseBook;
     }
+
 
     public Set<AdvertiseBook> getAll()
   {
-      return this.advertiseBooks;
+      Collection<AdvertiseBook> advertiseBooks = this.advertiseBooks.values();
+      Set<AdvertiseBook> set = new HashSet<>();
+      set.addAll(advertiseBooks);
+      return set;
   }
 
 }

@@ -1,4 +1,10 @@
 package service;
 
-public interface AdminService {
+import Domain.Admin;
+
+import java.util.Set;
+
+public interface AdminService extends IService<Admin,String>
+{
+    Set<Admin> getAll();
 }

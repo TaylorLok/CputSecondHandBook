@@ -11,10 +11,10 @@ public class UserSellerRepositoryImpl implements UserSellerRepository
 
     private UserSellerRepositoryImpl ()
     {
-        this.userSellers = new HashMap<String, UserSeller>();
+        this.userSellers = new HashMap<>();
     }
 
-    protected static UserSellerRepositoryImpl getRepository()
+    public static UserSellerRepositoryImpl getRepository()
     {
         if(repository==null) repository = new UserSellerRepositoryImpl();
         return repository;

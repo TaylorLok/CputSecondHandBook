@@ -25,7 +25,6 @@ public class AdvertiseBookFactoryTest
         Assert.assertEquals("Lokombe", ads.getUserName());
         Assert.assertEquals("28/12/1998", ads.getDate());
         Assert.assertEquals("game of thrones", ads.getTitle());
-        //Assert.assertNotNull(myTestAdvert.getImagepaths());
         Assert.assertEquals(false, ads.isBuyOrSell());
 
 

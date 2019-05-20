@@ -8,15 +8,20 @@ import org.junit.Test;
 
 import java.util.Set;
 
+import static junit.framework.TestCase.assertEquals;
+
 public class BookRepositoryImplTest
 {
     private BookRepository repository;
     private Book book;
+  //  private BookByAuthor author;
+    //private BookByCourse course;
 
-    private Book savedBooks ()
+    private Book savedBook()
     {
-        Set<Book> books = this.repository.getAll();
-        return (Book) books;
+        Set<Book> bookMap = this.repository.getAll();
+        return bookMap.iterator().next();
+
     }
 
 
@@ -24,14 +29,16 @@ public class BookRepositoryImplTest
     public void setUp() throws Exception
     {
         repository = BookRepositoryImpl.getRepository();
-        book = BookFactory.getInstance();
+        book = BookFactory.getNewBook("alchemist","love book",200.00,
+                "paolo caelho","18/05/2019", "English");
+
+
     }
 
     @Test
     public void create()
     {
-       //this.book.put(book.getBookTitle(),book);
-
+        assertEquals(repository.create(book),repository.create(book));
     }
 
     @Test

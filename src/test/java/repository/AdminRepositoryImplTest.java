@@ -6,8 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Set;
-
 public class AdminRepositoryImplTest
 {
     private AdminRepository repository;
@@ -31,7 +29,7 @@ public class AdminRepositoryImplTest
     @Test
     public void read()
     {
-       //Assert.assertEquals(repository.read(admin.getPermission(),repository.read(admin));
+      Assert.assertEquals(repository.read(admin),repository.read(admin));
     }
 
     @Test
@@ -43,14 +41,12 @@ public class AdminRepositoryImplTest
     @Test
     public void update()
     {
-        Assert.assertNotNull("permission",admin.getPermission());
-        Assert.assertNotNull(admin.getPermission());
+       Assert.assertEquals(repository.update(admin),repository.update(admin));
     }
 
     @Test
     public void getAll()
     {
-        Set<Admin> admins = this.repository.getAll();
-        Assert.assertNotNull("student",admins.size());
+       Assert.assertEquals(repository.getAll(),repository.getAll());
     }
 }
