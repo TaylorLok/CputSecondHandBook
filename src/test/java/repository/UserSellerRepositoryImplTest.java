@@ -1,7 +1,9 @@
 package repository;
 
-import Domain.UserSeller;
-import Factory.UserSellerFactory;
+import com.cput.ac.org.Domain.UserSeller;
+import com.cput.ac.org.Factory.UserSellerFactory;
+import com.cput.ac.org.repository.UserSellerRepository;
+import com.cput.ac.org.repository.UserSellerRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

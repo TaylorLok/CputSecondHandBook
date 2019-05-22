@@ -1,8 +1,8 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
 //import UserLogin;
 
-import com.cput.org.Controller.Domain.UserLogin;
+import com.cput.ac.org.Domain.UserLogin;
 
 public class UserLoginFactory
 {

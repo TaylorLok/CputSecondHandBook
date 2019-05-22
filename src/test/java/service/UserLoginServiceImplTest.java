@@ -1,13 +1,11 @@
 package service;
 
-import Domain.UserLogin;
-import Factory.UserLoginFactory;
+import com.cput.ac.org.Domain.UserLogin;
+import com.cput.ac.org.Factory.UserLoginFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.UserLoginRepositoryImpl;
-
-import static org.junit.Assert.*;
+import com.cput.ac.org.repository.UserLoginRepositoryImpl;
 
 public class UserLoginServiceImplTest
 {

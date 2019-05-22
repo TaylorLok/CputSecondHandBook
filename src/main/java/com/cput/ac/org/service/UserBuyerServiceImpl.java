@@ -1,11 +1,17 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.UserBuyer;
+import com.cput.ac.org.Domain.UserBuyer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service("UserBuyerServiceImpl")
 public class UserBuyerServiceImpl implements UserBuyerService
 {
+    @Autowired
+    @Qualifier("UserBuyerServiceImpl")
     private static UserBuyerServiceImpl service = null;
     private Map<String,UserBuyer > buyerMap;
 

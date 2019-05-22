@@ -1,4 +1,4 @@
-package com.cput.org.Controller.Domain;
+package com.cput.ac.org.Domain;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 

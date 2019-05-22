@@ -1,4 +1,4 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
 public interface IRepository<Real,sort>
 {

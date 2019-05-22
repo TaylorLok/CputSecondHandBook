@@ -1,12 +1,12 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
-import com.cput.org.Controller.Domain.BookByDepartment;
+import com.cput.ac.org.Domain.BookByDepartment;
 
 public class BookByDepartmentFactory
 {
-    public static BookByDepartment getDepartmentBook(String dptOfAppliedScience,String dptOfInformDesign,
+    public static BookByDepartment getDepartmentBook(String dptOfAppliedScience, String dptOfInformDesign,
                                                      String dptOfEngineering,
-                                                     String dptOfEducation,String dptOfBusiness,String dptOfHealth)
+                                                     String dptOfEducation, String dptOfBusiness, String dptOfHealth)
     {
         return new BookByDepartment.Builder()
                                     .dptOfInformDesign(dptOfInformDesign)

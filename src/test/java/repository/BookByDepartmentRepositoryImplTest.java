@@ -1,14 +1,16 @@
 package repository;
 
-import Domain.BookByDepartment;
-import Factory.BookByDepartmentFactory;
+import com.cput.ac.org.Domain.BookByDepartment;
+import com.cput.ac.org.Factory.BookByDepartmentFactory;
+import com.cput.ac.org.repository.BookByDepartmentRepository;
+import com.cput.ac.org.repository.BookByDepartmentRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class BookByDepartmentRepositoryImplTest
 {
-    private  BookByDepartmentRepository repository;
+    private BookByDepartmentRepository repository;
     private BookByDepartment department;
 
     @Before

@@ -1,7 +1,8 @@
 package Factory;
 
-import Domain.UserLogin;
+import com.cput.ac.org.Domain.UserLogin;
 //import UserLogin;
+import com.cput.ac.org.Factory.UserLoginFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

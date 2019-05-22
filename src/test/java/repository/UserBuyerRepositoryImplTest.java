@@ -1,12 +1,12 @@
 package repository;
 
-import Domain.UserBuyer;
-import Factory.UserBuyerFactory;
+import com.cput.ac.org.Domain.UserBuyer;
+import com.cput.ac.org.Factory.UserBuyerFactory;
+import com.cput.ac.org.repository.UserBuyerRepository;
+import com.cput.ac.org.repository.UserBuyerRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class UserBuyerRepositoryImplTest
 {

@@ -1,6 +1,6 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.SellerRating;
+import com.cput.ac.org.Domain.SellerRating;
 
 import java.util.Set;
 

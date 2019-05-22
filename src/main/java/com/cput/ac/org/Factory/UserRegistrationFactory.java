@@ -1,6 +1,6 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
-import com.cput.org.Controller.Domain.UserRegistration;
+import com.cput.ac.org.Domain.UserRegistration;
 
 public class UserRegistrationFactory
 {

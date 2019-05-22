@@ -1,13 +1,13 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
-import com.cput.org.Controller.Domain.BookByAuthor;
+import com.cput.ac.org.Domain.BookByAuthor;
 
 import java.util.*;
 
 public class BookByAuthorRepositoryImpl implements BookByAuthorRepository
 {
     private static BookByAuthorRepository repository;
-    private Map<String,BookByAuthor> author;
+    private Map<String, BookByAuthor> author;
 
     private BookByAuthorRepositoryImpl()
     {

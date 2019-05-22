@@ -1,6 +1,6 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
-import com.cput.org.Controller.Domain.Comment;
+import com.cput.ac.org.Domain.Comment;
 
 public class CommentFactory
 {

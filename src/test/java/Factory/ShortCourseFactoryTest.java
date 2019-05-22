@@ -1,6 +1,7 @@
 package Factory;
 
-import Domain.ShortCourse;
+import com.cput.ac.org.Domain.ShortCourse;
+import com.cput.ac.org.Factory.ShortCourseFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

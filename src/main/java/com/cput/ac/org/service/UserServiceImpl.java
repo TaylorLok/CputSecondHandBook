@@ -1,11 +1,17 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.User;
+import com.cput.ac.org.Domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service("UserServiceImpl")
 public class UserServiceImpl implements UserService
 {
+    @Autowired
+    @Qualifier("UserServiceImpl")
     private static UserServiceImpl service = null;
     private Map<String,User > userMap;
 

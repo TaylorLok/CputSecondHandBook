@@ -1,11 +1,11 @@
 package service;
 
-import Domain.ShortCourse;
-import Factory.ShortCourseFactory;
+import com.cput.ac.org.Domain.ShortCourse;
+import com.cput.ac.org.Factory.ShortCourseFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.ShortCourseRepositoryImpl;
+import com.cput.ac.org.repository.ShortCourseRepositoryImpl;
 
 public class ShortCourseServiceImplTest {
 

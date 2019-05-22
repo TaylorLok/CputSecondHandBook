@@ -1,11 +1,11 @@
 package service;
 
-import Domain.SellerRating;
-import Factory.SellerRatingFactory;
+import com.cput.ac.org.Domain.SellerRating;
+import com.cput.ac.org.Factory.SellerRatingFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.SellerRatingRepositoryImpl;
+import com.cput.ac.org.repository.SellerRatingRepositoryImpl;
 
 public class SellerRatingServiceImplTest {
 

@@ -1,7 +1,7 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
 
-import com.cput.org.Controller.Domain.UserEmailVerification;
+import com.cput.ac.org.Domain.UserEmailVerification;
 
 public class UserEmailVerificationFactory
 {

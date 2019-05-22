@@ -1,12 +1,12 @@
 package repository;
 
-import Domain.Comment;
-import Factory.CommentFactory;
+import com.cput.ac.org.Domain.Comment;
+import com.cput.ac.org.Factory.CommentFactory;
+import com.cput.ac.org.repository.CommentRepository;
+import com.cput.ac.org.repository.CommentRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class CommentRepositoryImplTest
 {

@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface UserService extends IService<User, String>
 {
-    void delete(User user);
+    void delete(User type);
 
     User read(User user);
 

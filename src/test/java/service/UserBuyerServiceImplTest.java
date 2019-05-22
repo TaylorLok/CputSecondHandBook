@@ -1,11 +1,11 @@
 package service;
 
-import Domain.UserBuyer;
-import Factory.UserBuyerFactory;
+import com.cput.ac.org.Domain.UserBuyer;
+import com.cput.ac.org.Factory.UserBuyerFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.UserBuyerRepositoryImpl;
+import com.cput.ac.org.repository.UserBuyerRepositoryImpl;
 
 public class UserBuyerServiceImplTest {
 

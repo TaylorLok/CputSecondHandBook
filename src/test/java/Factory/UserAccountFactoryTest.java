@@ -1,10 +1,8 @@
 package Factory;
 
-import Domain.UserAccount;
+import com.cput.ac.org.Domain.UserAccount;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class UserAccountFactoryTest
 {

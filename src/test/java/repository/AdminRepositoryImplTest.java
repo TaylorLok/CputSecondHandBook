@@ -1,7 +1,9 @@
 package repository;
 
-import Domain.Admin;
-import Factory.AdminFactory;
+import com.cput.ac.org.Domain.Admin;
+import com.cput.ac.org.Factory.AdminFactory;
+import com.cput.ac.org.repository.AdminRepository;
+import com.cput.ac.org.repository.AdminRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

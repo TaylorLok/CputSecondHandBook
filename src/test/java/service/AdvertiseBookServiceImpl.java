@@ -1,6 +1,7 @@
 package service;
 
-import Domain.AdvertiseBook;
+import com.cput.ac.org.Domain.AdvertiseBook;
+import com.cput.ac.org.service.AdvertiseBookService;
 
 import java.util.*;
 

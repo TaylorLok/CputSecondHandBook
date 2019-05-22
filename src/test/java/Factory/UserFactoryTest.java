@@ -1,6 +1,6 @@
 package Factory;
 
-import Domain.User;
+import com.cput.ac.org.Domain.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

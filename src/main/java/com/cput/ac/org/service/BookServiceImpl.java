@@ -1,11 +1,16 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.Book;
+import com.cput.ac.org.Domain.Book;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
-
+@Service("BookServiceImpl")
 public class BookServiceImpl implements BookService
 {
+    @Autowired
+    @Qualifier("BookServiceImpl")
     private static BookServiceImpl service = null;
     private Map<String,Book > book;
 

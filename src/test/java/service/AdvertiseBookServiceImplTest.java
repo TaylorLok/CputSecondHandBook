@@ -1,16 +1,14 @@
 package service;
 
-import Domain.AdvertiseBook;
-import Factory.AdvertiseBookFactory;
+import com.cput.ac.org.Domain.AdvertiseBook;
+import com.cput.ac.org.Factory.AdvertiseBookFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.AdvertiseBookRepository;
-import repository.AdvertiseBookRepositoryImpl;
+import com.cput.ac.org.repository.AdvertiseBookRepository;
+import com.cput.ac.org.repository.AdvertiseBookRepositoryImpl;
 
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class AdvertiseBookServiceImplTest
 {

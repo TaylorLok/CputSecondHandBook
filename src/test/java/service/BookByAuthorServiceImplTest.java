@@ -1,14 +1,12 @@
 package service;
 
-import Domain.BookByAuthor;
-import Factory.BookByAuthorFactory;
+import com.cput.ac.org.Domain.BookByAuthor;
+import com.cput.ac.org.Factory.BookByAuthorFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.BookByAuthorRepository;
-import repository.BookByAuthorRepositoryImpl;
-
-import static org.junit.Assert.*;
+import com.cput.ac.org.repository.BookByAuthorRepository;
+import com.cput.ac.org.repository.BookByAuthorRepositoryImpl;
 
 public class BookByAuthorServiceImplTest {
 

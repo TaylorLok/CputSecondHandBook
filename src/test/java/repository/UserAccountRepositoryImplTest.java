@@ -1,7 +1,9 @@
 package repository;
 
-import Domain.UserAccount;
-import Factory.UserAccountFactory;
+import com.cput.ac.org.Domain.UserAccount;
+import com.cput.ac.org.Factory.UserAccountFactory;
+import com.cput.ac.org.repository.UserAccountRepository;
+import com.cput.ac.org.repository.UserAccountRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

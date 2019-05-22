@@ -1,6 +1,6 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
-import com.cput.org.Controller.Domain.BookByAuthor;
+import com.cput.ac.org.Domain.BookByAuthor;
 
 public class BookByAuthorFactory
 {

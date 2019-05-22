@@ -1,11 +1,11 @@
 package service;
 
-import Domain.Book;
-import Factory.BookFactory;
+import com.cput.ac.org.Domain.Book;
+import com.cput.ac.org.Factory.BookFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.BookRepositoryImpl;
+import com.cput.ac.org.repository.BookRepositoryImpl;
 
 public class BookServiceImplTest {
 

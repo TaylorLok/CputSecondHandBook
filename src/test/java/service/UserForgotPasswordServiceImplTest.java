@@ -1,13 +1,11 @@
 package service;
 
-import Domain.UserForgotPassword;
-import Factory.UserForgotPasswordFactory;
+import com.cput.ac.org.Domain.UserForgotPassword;
+import com.cput.ac.org.Factory.UserForgotPasswordFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.UserForgotPasswordRepositoryImpl;
-
-import static org.junit.Assert.*;
+import com.cput.ac.org.repository.UserForgotPasswordRepositoryImpl;
 
 public class UserForgotPasswordServiceImplTest
 {

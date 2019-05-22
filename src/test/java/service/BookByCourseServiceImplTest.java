@@ -1,11 +1,11 @@
 package service;
 
-import Domain.BookByCourse;
-import Factory.BookByCourseFactory;
+import com.cput.ac.org.Domain.BookByCourse;
+import com.cput.ac.org.Factory.BookByCourseFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.BookByCourseRepositoryImpl;
+import com.cput.ac.org.repository.BookByCourseRepositoryImpl;
 
 public class BookByCourseServiceImplTest {
 

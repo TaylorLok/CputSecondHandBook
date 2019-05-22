@@ -1,7 +1,9 @@
 package repository;
 
-import Domain.SellerRating;
-import Factory.SellerRatingFactory;
+import com.cput.ac.org.Domain.SellerRating;
+import com.cput.ac.org.Factory.SellerRatingFactory;
+import com.cput.ac.org.repository.SellerRatingRepository;
+import com.cput.ac.org.repository.SellerRatingRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

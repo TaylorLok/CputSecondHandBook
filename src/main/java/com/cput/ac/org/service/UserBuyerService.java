@@ -1,6 +1,6 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.UserBuyer;
+import com.cput.ac.org.Domain.UserBuyer;
 
 import java.util.Set;
 

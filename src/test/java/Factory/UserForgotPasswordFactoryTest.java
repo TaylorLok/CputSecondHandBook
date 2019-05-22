@@ -1,6 +1,6 @@
 package Factory;
 
-import Domain.UserForgotPassword;
+import com.cput.ac.org.Domain.UserForgotPassword;
 import org.junit.Assert;
 import org.junit.Test;
 

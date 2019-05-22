@@ -1,6 +1,6 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
-import com.cput.org.Controller.Domain.UserAccount;
+import com.cput.ac.org.Domain.UserAccount;
 
 import java.util.*;
 
@@ -8,7 +8,7 @@ public class UserAccountRepositoryImpl implements UserAccountRepository
 {
 
     private static UserAccountRepositoryImpl repository = null;
-    private Map<String,UserAccount> userAcc;
+    private Map<String, UserAccount> userAcc;
 
     private UserAccountRepositoryImpl()
     {

@@ -1,11 +1,11 @@
 package service;
 
-import Domain.UserRegistration;
-import Factory.UserRegistrationFactory;
+import com.cput.ac.org.Domain.UserRegistration;
+import com.cput.ac.org.Factory.UserRegistrationFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.UserRegistrationRepositoryImpl;
+import com.cput.ac.org.repository.UserRegistrationRepositoryImpl;
 
 public class UserRegistrationServiceImplTest
 {

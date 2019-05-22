@@ -1,4 +1,4 @@
-package com.cput.org.Controller;
+package com.cput.ac.org.Controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

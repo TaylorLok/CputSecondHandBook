@@ -1,10 +1,8 @@
 package Factory;
 
-import Domain.SellerRating;
+import com.cput.ac.org.Domain.SellerRating;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SellerRatingFactoryTest
 {

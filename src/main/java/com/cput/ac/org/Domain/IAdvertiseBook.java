@@ -1,4 +1,4 @@
-package com.cput.org.Controller.Domain;
+package com.cput.ac.org.Domain;
 
 public interface IAdvertiseBook
 {
@@ -18,7 +18,6 @@ public interface IAdvertiseBook
 
 
      String getTitle();
-
 
 
 }

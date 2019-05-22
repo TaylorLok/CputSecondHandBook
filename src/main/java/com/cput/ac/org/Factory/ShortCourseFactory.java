@@ -1,10 +1,10 @@
-package com.cput.org.Controller.Factory;
+package com.cput.ac.org.Factory;
 
-import com.cput.org.Controller.Domain.ShortCourse;
+import com.cput.ac.org.Domain.ShortCourse;
 
 public class ShortCourseFactory
 {
-    public static ShortCourse getShortCourseBooks(String ccna1,String ccna2,String ccnp,String cyberSecurity)
+    public static ShortCourse getShortCourseBooks(String ccna1, String ccna2, String ccnp, String cyberSecurity)
     {
         return new ShortCourse.Builder()
                               .ccna1(ccna1)

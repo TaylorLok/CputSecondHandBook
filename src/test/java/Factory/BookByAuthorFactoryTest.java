@@ -1,11 +1,10 @@
 package Factory;
 
-import Domain.BookByAuthor;
+import com.cput.ac.org.Domain.BookByAuthor;
+import com.cput.ac.org.Factory.BookByAuthorFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class BookByAuthorFactoryTest
 {

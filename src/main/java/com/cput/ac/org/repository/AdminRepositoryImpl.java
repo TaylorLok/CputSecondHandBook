@@ -1,13 +1,13 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
-import com.cput.org.Controller.Domain.Admin;
+import com.cput.ac.org.Domain.Admin;
 
 import java.util.*;
 
 public class AdminRepositoryImpl implements AdminRepository
 {
   private static AdminRepositoryImpl repository = null;
-  private Map<String,Admin> admins;// this is the data store
+  private Map<String, Admin> admins;// this is the data store
 
   private AdminRepositoryImpl()
   {

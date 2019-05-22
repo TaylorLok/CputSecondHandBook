@@ -1,11 +1,17 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.SellerRating;
+import com.cput.ac.org.Domain.SellerRating;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service("SellerRatingServiceImpl")
 public class SellerRatingServiceImpl implements SellerRatingService
 {
+    @Autowired
+    @Qualifier("SellerRatingServiceImpl")
     private static SellerRatingServiceImpl service = null;
     private Map<String,SellerRating > rating;
 

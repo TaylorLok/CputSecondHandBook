@@ -1,7 +1,9 @@
 package repository;
 
-import Domain.ShortCourse;
-import Factory.ShortCourseFactory;
+import com.cput.ac.org.Domain.ShortCourse;
+import com.cput.ac.org.Factory.ShortCourseFactory;
+import com.cput.ac.org.repository.ShortCourseRepository;
+import com.cput.ac.org.repository.ShortCourseRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

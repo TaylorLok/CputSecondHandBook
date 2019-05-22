@@ -1,13 +1,13 @@
-package com.cput.org.Controller;
+package com.cput.ac.org.Controller;
 
-import com.cput.org.Controller.Domain.Admin;
-import com.cput.org.Controller.Factory.AdminFactory;
+import com.cput.ac.org.Domain.Admin;
+import com.cput.ac.org.Factory.AdminFactory;
+import com.cput.ac.org.service.AdminServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.cput.org.Controller.service.AdminServiceImpl;
 
 import java.util.Set;
 
@@ -22,8 +22,8 @@ public class AdminController
     @ResponseBody
     public Admin create(Admin admin)
     {
-        Admin admin1 = AdminFactory.getAdmin("permission");
-        return service.create(admin1);
+         admin = AdminFactory.getAdmin("permission");
+        return service.create(admin);
     }
 
     @GetMapping("/Read/")

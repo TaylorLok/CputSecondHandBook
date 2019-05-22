@@ -1,11 +1,11 @@
 package service;
 
-import Domain.UserEmailVerification;
-import Factory.UserEmailVerificationFactory;
+import com.cput.ac.org.Domain.UserEmailVerification;
+import com.cput.ac.org.Factory.UserEmailVerificationFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.userEmailVerificationRepositoryImpl;
+import com.cput.ac.org.repository.userEmailVerificationRepositoryImpl;
 
 public class UserEmailVerificationServiceImplTest {
 

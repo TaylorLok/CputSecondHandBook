@@ -1,13 +1,13 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
-import com.cput.org.Controller.Domain.BookByDepartment;
+import com.cput.ac.org.Domain.BookByDepartment;
 
 import java.util.*;
 
 public class BookByDepartmentRepositoryImpl implements BookByDepartmentRepository
 {
     private static BookByDepartmentRepository repository;
-    private Map<String,BookByDepartment> department;
+    private Map<String, BookByDepartment> department;
 
     private BookByDepartmentRepositoryImpl()
     {

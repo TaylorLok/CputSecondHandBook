@@ -1,6 +1,6 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.UserRegistration;
+import com.cput.ac.org.Domain.UserRegistration;
 
 import java.util.Set;
 

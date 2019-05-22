@@ -1,6 +1,7 @@
 package Factory;
 
-import Domain.Comment;
+import com.cput.ac.org.Domain.Comment;
+import com.cput.ac.org.Factory.CommentFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

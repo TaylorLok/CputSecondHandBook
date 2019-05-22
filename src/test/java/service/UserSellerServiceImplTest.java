@@ -1,11 +1,11 @@
 package service;
 
-import Domain.UserSeller;
-import Factory.UserSellerFactory;
+import com.cput.ac.org.Domain.UserSeller;
+import com.cput.ac.org.Factory.UserSellerFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.UserSellerRepositoryImpl;
+import com.cput.ac.org.repository.UserSellerRepositoryImpl;
 
 public class UserSellerServiceImplTest
 {

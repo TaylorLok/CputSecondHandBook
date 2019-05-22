@@ -1,11 +1,11 @@
 package service;
 
-import Domain.Comment;
-import Factory.CommentFactory;
+import com.cput.ac.org.Domain.Comment;
+import com.cput.ac.org.Factory.CommentFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import repository.CommentRepositoryImpl;
+import com.cput.ac.org.repository.CommentRepositoryImpl;
 
 public class CommentServiceImplTest
 {

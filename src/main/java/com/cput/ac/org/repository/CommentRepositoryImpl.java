@@ -1,6 +1,6 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
-import com.cput.org.Controller.Domain.Comment;
+import com.cput.ac.org.Domain.Comment;
 
 import java.util.*;
 

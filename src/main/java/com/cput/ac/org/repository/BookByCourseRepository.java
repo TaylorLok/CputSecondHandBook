@@ -1,6 +1,6 @@
-package com.cput.org.Controller.repository;
+package com.cput.ac.org.repository;
 
-import com.cput.org.Controller.Domain.BookByCourse;
+import com.cput.ac.org.Domain.BookByCourse;
 
 import java.util.Set;
 

@@ -1,7 +1,7 @@
 package Controller;
 
-import Domain.Admin;
-import Factory.AdminFactory;
+import com.cput.ac.org.Domain.Admin;
+import com.cput.ac.org.Factory.AdminFactory;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -51,22 +51,15 @@ public class AdminControllerTest
     }
 
     @Test
-    public void create()
+    public void create(Admin admin)
     {
-       Admin admin = AdminFactory.getAdmin("allowed");
+       admin = AdminFactory.getAdmin("allowed");
 
        ResponseEntity<Admin> posResponse = restTemplate.postForEntity(baseURL + "/create",admin,Admin.class);
        assertNotNull(posResponse);
        assertNotNull(posResponse.getBody());
     }
 
-    @Test
-    public void read() {
-    }
-
-    @Test
-    public void update() {
-    }
 
 
 }

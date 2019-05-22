@@ -1,11 +1,17 @@
-package com.cput.org.Controller.service;
+package com.cput.ac.org.service;
 
-import com.cput.org.Controller.Domain.UserEmailVerification;
+import com.cput.ac.org.Domain.UserEmailVerification;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service("UserEmailVerificationServiceImpl")
 public class UserEmailVerificationServiceImpl implements UserEmailVerificationService
 {
+    @Autowired
+    @Qualifier("UserEmailVerificationServiceImpl")
     private static UserEmailVerificationServiceImpl service = null;
     private Map<String,UserEmailVerification > email;
 
