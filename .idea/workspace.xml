@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/CputSecondHandBookApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/CputSecondHandBookApplication.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +68,8 @@
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth0" value="15" />
+    <property name="RequestMappingsPanelWidth1" value="15" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566227903174" />
@@ -272,7 +273,7 @@
       <workItem from="1565596686314" duration="871000" />
       <workItem from="1565896795062" duration="3664000" />
       <workItem from="1569006852742" duration="11964000" />
-      <workItem from="1569090920484" duration="4963000" />
+      <workItem from="1569090920484" duration="5908000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
