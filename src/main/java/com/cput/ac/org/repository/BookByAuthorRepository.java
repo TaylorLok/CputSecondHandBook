@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.BookByAuthor;
+import com.cput.ac.org.domain.BookByAuthor;
 
 import java.util.Set;
 

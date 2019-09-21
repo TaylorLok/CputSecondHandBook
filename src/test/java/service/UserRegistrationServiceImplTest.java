@@ -1,7 +1,7 @@
 package service;
 
-import com.cput.ac.org.Domain.UserRegistration;
-import com.cput.ac.org.Factory.UserRegistrationFactory;
+import com.cput.ac.org.domain.UserRegistration;
+import com.cput.ac.org.factory.UserRegistrationFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

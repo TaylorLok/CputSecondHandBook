@@ -1,7 +1,7 @@
 package service;
 
-import com.cput.ac.org.Domain.UserAccount;
-import com.cput.ac.org.Factory.UserAccountFactory;
+import com.cput.ac.org.domain.UserAccount;
+import com.cput.ac.org.factory.UserAccountFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

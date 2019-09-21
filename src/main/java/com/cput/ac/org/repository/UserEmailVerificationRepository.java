@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.UserEmailVerification;
+import com.cput.ac.org.domain.UserEmailVerification;
 
 import java.util.Set;
 

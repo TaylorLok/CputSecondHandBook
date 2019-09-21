@@ -1,7 +1,7 @@
 package repository;
 
-import com.cput.ac.org.Domain.AdvertiseBook;
-import com.cput.ac.org.Factory.AdvertiseBookFactory;
+import com.cput.ac.org.domain.AdvertiseBook;
+import com.cput.ac.org.factory.AdvertiseBookFactory;
 import com.cput.ac.org.repository.AdvertiseBookRepository;
 import com.cput.ac.org.repository.AdvertiseBookRepositoryImpl;
 import org.junit.Assert;

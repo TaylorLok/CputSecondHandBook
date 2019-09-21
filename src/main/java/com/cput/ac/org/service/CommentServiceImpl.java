@@ -1,8 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.Comment;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.cput.ac.org.domain.Comment;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -10,14 +8,13 @@ import java.util.*;
 @Service("CommentServiceImpl")
 public class CommentServiceImpl implements CommentService
 {
-    @Autowired
-    @Qualifier("CommentServiceImpl")
     private static CommentServiceImpl service = null;
     private Map<String,Comment > usercomment;
 
     private CommentServiceImpl()
     {
         this.usercomment = new HashMap<>();
+        this.service = service;
     }
 
     public static CommentServiceImpl getRepository()

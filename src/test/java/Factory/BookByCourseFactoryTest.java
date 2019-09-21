@@ -1,6 +1,6 @@
 package Factory;
 
-import com.cput.ac.org.Domain.BookByCourse;
+import com.cput.ac.org.domain.BookByCourse;
 import org.junit.Assert;
 import org.junit.Test;
 

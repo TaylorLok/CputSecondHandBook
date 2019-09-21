@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.UserForgotPassword;
+import com.cput.ac.org.domain.UserForgotPassword;
 
 import java.util.*;
 

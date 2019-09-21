@@ -1,6 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.User;
+import com.cput.ac.org.domain.User;
 
 import java.util.Set;
 

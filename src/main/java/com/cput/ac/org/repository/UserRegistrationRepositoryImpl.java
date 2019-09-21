@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.UserRegistration;
+import com.cput.ac.org.domain.UserRegistration;
 
 import java.util.*;
 

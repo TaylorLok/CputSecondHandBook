@@ -1,23 +1,20 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.Admin;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.cput.ac.org.domain.Admin;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service("AdminServiceImpl")
+@Service(value = "AdminServiceImpl")
 public class AdminServiceImpl implements AdminService
 {
-    @Autowired
-    @Qualifier("AdminServiceImpl")
     private static AdminServiceImpl service = null;
     private Map<String,Admin > adminMap;
 
     private AdminServiceImpl()
     {
         this.adminMap = new HashMap<>();
+        this.service = service;
     }
 
     public static AdminServiceImpl getRepository()

@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.Comment;
+import com.cput.ac.org.domain.Comment;
 
 import java.util.Set;
 

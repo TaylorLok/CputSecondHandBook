@@ -1,22 +1,19 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.Book;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.cput.ac.org.domain.Book;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 @Service("BookServiceImpl")
 public class BookServiceImpl implements BookService
 {
-    @Autowired
-    @Qualifier("BookServiceImpl")
     private static BookServiceImpl service = null;
     private Map<String,Book > book;
 
     private BookServiceImpl()
     {
         this.book = new HashMap<>();
+        this.service = service;
     }
 
     public static BookServiceImpl getRepository()

@@ -1,6 +1,6 @@
 package Factory;
 
-import com.cput.ac.org.Domain.AdvertiseBook;
+import com.cput.ac.org.domain.AdvertiseBook;
 import org.junit.Assert;
 import org.junit.Test;
 

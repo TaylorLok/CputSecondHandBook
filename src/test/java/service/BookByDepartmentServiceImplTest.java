@@ -1,7 +1,7 @@
 package service;
 
-import com.cput.ac.org.Domain.BookByDepartment;
-import com.cput.ac.org.Factory.BookByDepartmentFactory;
+import com.cput.ac.org.domain.BookByDepartment;
+import com.cput.ac.org.factory.BookByDepartmentFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

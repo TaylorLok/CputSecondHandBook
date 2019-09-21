@@ -1,6 +1,6 @@
 package Factory;
 
-import com.cput.ac.org.Domain.Admin;
+import com.cput.ac.org.domain.Admin;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
 package repository;
 
-import com.cput.ac.org.Domain.UserBuyer;
-import com.cput.ac.org.Factory.UserBuyerFactory;
+import com.cput.ac.org.domain.UserBuyer;
+import com.cput.ac.org.factory.UserBuyerFactory;
 import com.cput.ac.org.repository.UserBuyerRepository;
 import com.cput.ac.org.repository.UserBuyerRepositoryImpl;
 import org.junit.Assert;

@@ -1,7 +1,7 @@
 package service;
 
-import com.cput.ac.org.Domain.UserForgotPassword;
-import com.cput.ac.org.Factory.UserForgotPasswordFactory;
+import com.cput.ac.org.domain.UserForgotPassword;
+import com.cput.ac.org.factory.UserForgotPasswordFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

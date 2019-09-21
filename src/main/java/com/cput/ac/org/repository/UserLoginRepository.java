@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.UserLogin;
+import com.cput.ac.org.domain.UserLogin;
 
 import java.util.Set;
 

@@ -1,6 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.BookByDepartment;
+import com.cput.ac.org.domain.BookByDepartment;
 
 import java.util.Set;
 

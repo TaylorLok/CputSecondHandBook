@@ -1,6 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.UserEmailVerification;
+import com.cput.ac.org.domain.UserEmailVerification;
 
 import java.util.Set;
 

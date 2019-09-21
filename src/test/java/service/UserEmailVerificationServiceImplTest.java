@@ -1,7 +1,7 @@
 package service;
 
-import com.cput.ac.org.Domain.UserEmailVerification;
-import com.cput.ac.org.Factory.UserEmailVerificationFactory;
+import com.cput.ac.org.domain.UserEmailVerification;
+import com.cput.ac.org.factory.UserEmailVerificationFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

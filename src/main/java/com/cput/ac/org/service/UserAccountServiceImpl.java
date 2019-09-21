@@ -1,8 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.UserAccount;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.cput.ac.org.domain.UserAccount;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -10,14 +8,13 @@ import java.util.*;
 @Service("UserAccountServiceImpl")
 public class UserAccountServiceImpl implements UserAccountService
 {
-    @Autowired
-    @Qualifier("UserAccountServiceImpl")
     private static UserAccountServiceImpl service = null;
     private Map<String,UserAccount > useraccount;
 
     private UserAccountServiceImpl()
     {
         this.useraccount = new HashMap<>();
+        this.service = service;
     }
 
     public static UserAccountServiceImpl getRepository()

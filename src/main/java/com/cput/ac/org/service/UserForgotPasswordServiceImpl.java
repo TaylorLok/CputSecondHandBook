@@ -1,9 +1,7 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.UserForgotPassword;
+import com.cput.ac.org.domain.UserForgotPassword;
 import com.cput.ac.org.repository.UserForgotPasswordRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -11,14 +9,13 @@ import java.util.*;
 @Service("UserForgotPasswordServiceImpl")
 public class UserForgotPasswordServiceImpl implements UserForgotPasswordRepository
 {
-    @Autowired
-    @Qualifier("UserForgotPasswordServiceImpl")
     private static UserForgotPasswordServiceImpl service = null;
     private Map<String,UserForgotPassword > userForgotPassword;
 
     private UserForgotPasswordServiceImpl()
     {
         this.userForgotPassword = new HashMap<>();
+        this.service = service;
     }
 
     public static UserForgotPasswordServiceImpl getRepository()

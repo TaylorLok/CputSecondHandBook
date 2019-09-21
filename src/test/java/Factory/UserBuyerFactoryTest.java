@@ -1,7 +1,7 @@
 package Factory;
 
-import com.cput.ac.org.Domain.UserBuyer;
-import com.cput.ac.org.Factory.UserBuyerFactory;
+import com.cput.ac.org.domain.UserBuyer;
+import com.cput.ac.org.factory.UserBuyerFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

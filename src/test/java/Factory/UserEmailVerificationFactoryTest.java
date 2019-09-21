@@ -1,6 +1,6 @@
 package Factory;
 
-import com.cput.ac.org.Domain.UserEmailVerification;
+import com.cput.ac.org.domain.UserEmailVerification;
 import org.junit.Assert;
 
 public class UserEmailVerificationFactoryTest

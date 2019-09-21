@@ -1,7 +1,7 @@
 package Controller;
 
-import com.cput.ac.org.Domain.Admin;
-import com.cput.ac.org.Factory.AdminFactory;
+import com.cput.ac.org.domain.Admin;
+import com.cput.ac.org.factory.AdminFactory;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;

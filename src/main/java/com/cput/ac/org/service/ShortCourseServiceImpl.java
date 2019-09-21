@@ -1,8 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.ShortCourse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.cput.ac.org.domain.ShortCourse;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -10,14 +8,13 @@ import java.util.*;
 @Service("ShortCourseServiceImpl")
 public class ShortCourseServiceImpl implements ShortCourseService
 {
-    @Autowired
-    @Qualifier("ShortCourseServiceImpl")
     private static ShortCourseServiceImpl service = null;
     private Map<String, ShortCourse> shortcourse;
 
     private ShortCourseServiceImpl()
     {
         this.shortcourse = new HashMap<>();
+        this.service = service;
     }
 
     public static ShortCourseServiceImpl getRepository()

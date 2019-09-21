@@ -1,8 +1,6 @@
 package com.cput.ac.org.service;
 
-import com.cput.ac.org.Domain.BookByAuthor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.cput.ac.org.domain.BookByAuthor;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -10,14 +8,13 @@ import java.util.*;
 @Service("BookByAuthorServiceImpl")
 public class BookByAuthorServiceImpl implements BookByAuthorService
 {
-    @Autowired
-    @Qualifier("BookByAuthorServiceImpl")
     private static BookByAuthorServiceImpl service = null;
     private Map<String, BookByAuthor> authorMap;
 
     private BookByAuthorServiceImpl()
     {
         this.authorMap = new HashMap<>();
+        this.service = service;
     }
 
     public static BookByAuthorServiceImpl getRepository()

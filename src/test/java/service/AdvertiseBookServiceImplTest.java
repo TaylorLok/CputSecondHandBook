@@ -1,7 +1,7 @@
 package service;
 
-import com.cput.ac.org.Domain.AdvertiseBook;
-import com.cput.ac.org.Factory.AdvertiseBookFactory;
+import com.cput.ac.org.domain.AdvertiseBook;
+import com.cput.ac.org.factory.AdvertiseBookFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

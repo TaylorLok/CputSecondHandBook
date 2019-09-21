@@ -1,7 +1,7 @@
 package repository;
 
-import com.cput.ac.org.Domain.Book;
-import com.cput.ac.org.Factory.BookFactory;
+import com.cput.ac.org.domain.Book;
+import com.cput.ac.org.factory.BookFactory;
 import com.cput.ac.org.repository.BookRepository;
 import com.cput.ac.org.repository.BookRepositoryImpl;
 import org.junit.Assert;

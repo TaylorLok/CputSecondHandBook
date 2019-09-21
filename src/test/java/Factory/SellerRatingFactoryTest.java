@@ -1,6 +1,6 @@
 package Factory;
 
-import com.cput.ac.org.Domain.SellerRating;
+import com.cput.ac.org.domain.SellerRating;
 import org.junit.Before;
 import org.junit.Test;
 

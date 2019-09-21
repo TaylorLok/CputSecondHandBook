@@ -1,6 +1,6 @@
 package com.cput.ac.org.repository;
 
-import com.cput.ac.org.Domain.Book;
+import com.cput.ac.org.domain.Book;
 
 import java.util.*;
 

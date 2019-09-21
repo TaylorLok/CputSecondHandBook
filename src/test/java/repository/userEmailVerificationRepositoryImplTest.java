@@ -1,7 +1,7 @@
 package repository;
 
-import com.cput.ac.org.Domain.UserEmailVerification;
-import com.cput.ac.org.Factory.UserEmailVerificationFactory;
+import com.cput.ac.org.domain.UserEmailVerification;
+import com.cput.ac.org.factory.UserEmailVerificationFactory;
 import com.cput.ac.org.repository.UserEmailVerificationRepository;
 import com.cput.ac.org.repository.userEmailVerificationRepositoryImpl;
 import org.junit.Before;
