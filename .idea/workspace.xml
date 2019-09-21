@@ -4,7 +4,9 @@
     <option name="showFiles" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="" />
+    <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +272,7 @@
       <workItem from="1565596686314" duration="871000" />
       <workItem from="1565896795062" duration="3664000" />
       <workItem from="1569006852742" duration="11964000" />
-      <workItem from="1569090920484" duration="6224000" />
+      <workItem from="1569090920484" duration="6508000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
