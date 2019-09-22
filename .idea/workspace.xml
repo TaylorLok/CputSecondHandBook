@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/ResponseObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/factory/ResponseObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/META-INF/resources/frontend/src/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cput/ac/org/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cput/ac/org/controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cput/ac/org/Controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cput/ac/org/Controller/AdminControllerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +57,7 @@
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -75,6 +75,7 @@
   <component name="ProjectId" id="1R78bppZ8faVorQgiifLdreBY1d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -138,18 +139,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AdminControllerTest.testGetAdmin">
-    <configuration name="AdminControllerTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.CputSecondHandBookApplication">
+    <configuration name="AdminControllerTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="com.cput.ac.org.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="MAIN_CLASS_NAME" value="Controller.AdminControllerTest" />
-      <option name="METHOD_NAME" value="a_create" />
+      <option name="PACKAGE_NAME" value="com.cput.ac.org.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.cput.ac.org.controller.AdminControllerTest" />
+      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,7 +188,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminControllerTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
         <pattern>
@@ -196,8 +197,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cput.ac.org.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.cput.ac.org.controller.CommentControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.cput.ac.org.controller.AdminControllerTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -234,19 +236,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Projects.getUser" />
-      <item itemvalue="JUnit.CommentControllerTest" />
       <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
       <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
-      <item itemvalue="JUnit.AdminControllerTest.a_create" />
       <item itemvalue="JUnit.AdminControllerTest.getAll" />
+      <item itemvalue="JUnit.AdminControllerTest.create" />
+      <item itemvalue="JUnit.AdminControllerTest.update" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
+        <item itemvalue="JUnit.AdminControllerTest.update" />
+        <item itemvalue="JUnit.AdminControllerTest.create" />
         <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
         <item itemvalue="JUnit.AdminControllerTest.getAll" />
-        <item itemvalue="JUnit.AdminControllerTest.a_create" />
-        <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
-        <item itemvalue="JUnit.CommentControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +291,7 @@
       <workItem from="1565896795062" duration="3664000" />
       <workItem from="1569006852742" duration="11964000" />
       <workItem from="1569090920484" duration="8315000" />
-      <workItem from="1569100449740" duration="10454000" />
+      <workItem from="1569100449740" duration="20024000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>

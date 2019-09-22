@@ -2,7 +2,6 @@ package com.cput.ac.org.controller;
 
 import com.cput.ac.org.domain.Admin;
 import com.cput.ac.org.factory.AdminFactory;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +37,7 @@ public class AdminControllerTest
         assertNotNull(response.getBody());
     }
 
-    @Ignore
+    @Test
     public void create()
     {
         Admin admin = AdminFactory.getAdmin("allow");

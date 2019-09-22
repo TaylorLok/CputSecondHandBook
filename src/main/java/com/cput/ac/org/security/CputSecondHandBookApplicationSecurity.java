@@ -38,12 +38,14 @@ public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurer
         http.httpBasic()
                 .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET,"/domain/**/create/**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.GET,"/CputSecondHandBook/**/login/**").hasRole(ADMIN_ROLE)
                 .and()
                 .csrf()
                 .disable()
                 .formLogin()
                 .disable();
+
+
     }
 
     @Bean
