@@ -1,27 +1,56 @@
 package com.cput.ac.org.security;
 
-import org.springframework.context.annotation.Configuration;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-public class CputSecondHandBookApplicationSecurity //extends WebSecurityConfigurerAdapter
+public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurerAdapter
 {
-    /*
-    private static final String USER_ROLE = "USER";
-    private static final String ADMIN_ROLE = "FOUNDER";
+
+   private static final String USER_ROLE = "USER";
+
+   private static final String ADMIN_ROLE = "ADMIN";
+
 
     @Override
     protected void configure (AuthenticationManagerBuilder auth) throws Exception
     {
         auth . inMemoryAuthentication()
                 .withUser("user")
-                .password(encode().encode("password"))
+                .password(encoder().encode("lokombe"))
                 .roles("USER_ROLE")
                 .and()
-                .withUser("founder")
-                .password(encode().encode("founder"))
+                .withUser("admin")
+                .password(encoder().encode("taylor"))
                 .roles(USER_ROLE,ADMIN_ROLE);
     }
 
-    */
+    @Override
+    protected void configure(HttpSecurity http) throws Exception
+    {
+        http.httpBasic()
+                .and()
+                .authorizeRequests()
+                .antMatchers(HttpMethod.GET,"/domain/**/create/**").hasRole(ADMIN_ROLE)
+                .and()
+                .csrf()
+                .disable()
+                .formLogin()
+                .disable();
+    }
+
+    @Bean
+    public PasswordEncoder encoder()
+    {
+        return new BCryptPasswordEncoder();
+    }
+
+
 }

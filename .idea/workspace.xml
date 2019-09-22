@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/ResponseObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/factory/ResponseObjectFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +77,8 @@
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="15" />
-    <property name="RequestMappingsPanelWidth1" value="15" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566227903174" />
@@ -128,7 +138,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CputSecondHandBookApplication">
+  <component name="RunManager" selected="JUnit.AdminControllerTest.testGetAdmin">
+    <configuration name="AdminControllerTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.AdminControllerTest" />
+      <option name="METHOD_NAME" value="a_create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.AdminControllerTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerTest.testGetAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.AdminControllerTest" />
+      <option name="METHOD_NAME" value="testGetAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -140,20 +198,6 @@
       <option name="PACKAGE_NAME" value="com.cput.ac.org.controller" />
       <option name="MAIN_CLASS_NAME" value="com.cput.ac.org.controller.CommentControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Controller in CputSecondHandBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Controller" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,34 +219,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.cput.ac.org.controller in CputSecondHandBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cput.ac.org.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cput.ac.org.controller" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="repository in CputSecondHandBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="repository" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CputSecondHandBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -218,19 +234,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Projects.getUser" />
-      <item itemvalue="JUnit.Controller in CputSecondHandBook" />
-      <item itemvalue="JUnit.com.cput.ac.org.controller in CputSecondHandBook" />
-      <item itemvalue="JUnit.repository in CputSecondHandBook" />
       <item itemvalue="JUnit.CommentControllerTest" />
       <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
+      <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
+      <item itemvalue="JUnit.AdminControllerTest.a_create" />
+      <item itemvalue="JUnit.AdminControllerTest.getAll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
+        <item itemvalue="JUnit.AdminControllerTest.getAll" />
+        <item itemvalue="JUnit.AdminControllerTest.a_create" />
         <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
         <item itemvalue="JUnit.CommentControllerTest" />
-        <item itemvalue="JUnit.repository in CputSecondHandBook" />
-        <item itemvalue="JUnit.com.cput.ac.org.controller in CputSecondHandBook" />
-        <item itemvalue="JUnit.Controller in CputSecondHandBook" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +288,8 @@
       <workItem from="1565596686314" duration="871000" />
       <workItem from="1565896795062" duration="3664000" />
       <workItem from="1569006852742" duration="11964000" />
-      <workItem from="1569090920484" duration="6508000" />
+      <workItem from="1569090920484" duration="8315000" />
+      <workItem from="1569100449740" duration="10454000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>
@@ -297,38 +314,6 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="BookByAuthorControllerTest - 2019.05.22 at 08h 50m 37s.xml">
-      <configuration name="BookByAuthorControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserSellerControllerTest - 2019.05.22 at 09h 16m 25s.xml">
-      <configuration name="UserSellerControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserSellerControllerTest - 2019.05.22 at 09h 26m 24s.xml">
-      <configuration name="UserSellerControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserSellerControllerTest - 2019.05.22 at 09h 38m 36s.xml">
-      <configuration name="UserSellerControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdminServiceImplTest - 2019.05.22 at 10h 55m 30s.xml">
-      <configuration name="AdminServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Controller_in_CputSecondHandBook - 2019.05.22 at 10h 59m 04s.xml">
-      <configuration name="Controller in CputSecondHandBook" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_cput_ac_org_Controller_in_CputSecondHandBook - 2019.05.22 at 11h 00m 35s.xml">
-      <configuration name="com.cput.ac.org.Controller in CputSecondHandBook" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_cput_ac_org_Controller_in_CputSecondHandBook - 2019.05.22 at 11h 12m 40s.xml">
-      <configuration name="com.cput.ac.org.Controller in CputSecondHandBook" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="repository_in_CputSecondHandBook - 2019.05.22 at 11h 19m 19s.xml">
-      <configuration name="repository in CputSecondHandBook" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommentControllerTest - 2019.05.22 at 11h 21m 06s.xml">
-      <configuration name="CommentControllerTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.assertNotNull;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @RunWith(SpringRunner.class)
 
 public class AdminControllerTest
@@ -26,7 +26,16 @@ public class AdminControllerTest
    private String baseURL = "http://localhost:8080/Admin";
 
 
+    @Test
+    public void a_create()
+    {
+        Admin admin = AdminFactory.getAdmin("2");
 
+        ResponseEntity<Admin> postResponse = restTemplate.withBasicAuth("admin","admin").postForEntity(baseURL + "/create", admin, Admin.class);
+        assertNotNull(postResponse);
+        assertNotNull(postResponse.getBody());
+        System.out.println(postResponse.toString());
+    }
 
 
     @Test
