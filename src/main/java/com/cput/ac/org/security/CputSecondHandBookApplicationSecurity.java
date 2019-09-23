@@ -9,13 +9,16 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+@Controller
 @Configuration
+@RequestMapping(value = "/CputSecondHandBook")
 public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurerAdapter
 {
 
    private static final String USER_ROLE = "USER";
-
    private static final String ADMIN_ROLE = "ADMIN";
 
 
@@ -30,19 +33,16 @@ public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurer
                 .withUser("admin")
                 .password(encoder().encode("taylor"))
                 .roles(USER_ROLE,ADMIN_ROLE);
-    }
+   }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception
-    {
+   {
         http.httpBasic()
                 .and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET,"/CputSecondHandBook/**/login/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.POST,"CputSecondHandBook/create**").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.GET,"CputSecondHandBook/getall").hasRole(USER_ROLE)
-                .antMatchers(HttpMethod.DELETE,"CputSecondHandBook/delete**").hasRole(ADMIN_ROLE)
-                .antMatchers(HttpMethod.PUT,"CputSecondHandBook/update**").hasRole(ADMIN_ROLE)
                 .and()
                 .csrf()
                 .disable()
@@ -54,9 +54,9 @@ public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurer
 
     @Bean
     public PasswordEncoder encoder()
-    {
+   {
         return new BCryptPasswordEncoder();
-    }
+  }
 
 
 }

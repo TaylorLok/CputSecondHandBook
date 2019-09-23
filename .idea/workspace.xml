@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/BookManagementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/MyWebApplicationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/UserLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CputSecondHandBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CputSecondHandBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/BookManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/BookManagementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/META-INF/resources/frontend/src/README" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/META-INF/resources/frontend/src/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/BookManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/BookManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +291,7 @@
       <workItem from="1565896795062" duration="3664000" />
       <workItem from="1569006852742" duration="11964000" />
       <workItem from="1569090920484" duration="8315000" />
-      <workItem from="1569100449740" duration="25541000" />
+      <workItem from="1569100449740" duration="32489000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>

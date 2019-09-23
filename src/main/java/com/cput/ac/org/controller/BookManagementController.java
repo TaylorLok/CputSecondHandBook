@@ -8,20 +8,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
-@RequestMapping("/CputSecondHandBook/UserLogin")
+@RequestMapping(value = "/CputSecondHandBook/UserLogin",method = RequestMethod.POST)
 public class BookManagementController
 {
     @Autowired
    UserLoginServiceImpl userLoginService;
 
 
-    @PostMapping(value = "/create",consumes = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/create",consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity createUserLogin(@RequestBody UserLogin userlogin)
 {
     System.out.println(userlogin);
