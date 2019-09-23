@@ -2,16 +2,13 @@ package com.cput.ac.org.controller;
 
 import com.cput.ac.org.domain.UserLogin;
 import com.cput.ac.org.service.UserLoginServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
 @RestController
 @RequestMapping("/CputSecondHandBook/controller/UserLogin")
+
 public class UserLoginController
 {
     private final UserLoginServiceImpl service;
@@ -27,7 +24,7 @@ public class UserLoginController
         return service.create(user);
     }
 
-    @GetMapping("/update/")
+    @PutMapping("/update/")
     @ResponseBody
     public UserLogin update(UserLogin user)
     {
