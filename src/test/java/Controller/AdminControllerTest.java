@@ -18,7 +18,6 @@ import static org.junit.Assert.assertNotNull;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @RunWith(SpringRunner.class)
-
 public class AdminControllerTest
 {
    @Autowired
@@ -51,12 +50,13 @@ public class AdminControllerTest
     @Ignore
     public void testGetAdmin()
     {
-        Admin admin = restTemplate.getForObject(baseURL + "/Admin/permis",Admin.class);
+        Admin admin = restTemplate.getForObject(baseURL + "/Admin/permit",Admin.class);
         System.out.println(admin.getUser());
         System.out.println(admin.getPermission());
         System.out.println(admin.manageAdvert());
         System.out.println(admin.manageBook());
         assertNotNull(admin);
+
     }
 
     @Test

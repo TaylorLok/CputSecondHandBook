@@ -1,10 +1,8 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.Admin;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface AdminRepository extends IRepository <Admin,String>
+public interface AdminRepository extends JpaRepository<Admin,String>
 {
-    Set<Admin> getAll();
 }

@@ -5,7 +5,6 @@ import com.cput.ac.org.factory.BookByCourseFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import com.cput.ac.org.repository.BookByCourseRepositoryImpl;
 
 public class BookByCourseServiceImplTest {
 

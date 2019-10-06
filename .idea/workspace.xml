@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/MyWebApplicationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CputSecondHandBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CputSecondHandBook.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/BookManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/BookManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/repository/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/repository/AdminRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/repository/AdminRepositoryImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/META-INF/resources/frontend/src/README" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/META-INF/resources/frontend/src/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/BookManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/BookManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/AdminRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/AdminRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/AdminServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/AdminServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CputSecondHandBook.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,17 +144,32 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CputSecondHandBookApplication">
-    <configuration name="AdminControllerTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cput.ac.org.controller.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cput.ac.org.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.cput.ac.org.controller.AdminControllerTest" />
-      <option name="METHOD_NAME" value="create" />
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.AdminControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CputSecondHandBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controller" />
+      <option name="MAIN_CLASS_NAME" value="Controller.AdminControllerTest" />
+      <option name="METHOD_NAME" value="a_create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,22 +207,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminControllerTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CputSecondHandBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cput.ac.org.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cput.ac.org.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.cput.ac.org.controller.AdminControllerTest" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Projects.getUser" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CputSecondHandBook" />
       <extension name="coverage">
@@ -236,19 +239,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Projects.getUser" />
-      <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
       <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
       <item itemvalue="JUnit.AdminControllerTest.getAll" />
-      <item itemvalue="JUnit.AdminControllerTest.create" />
-      <item itemvalue="JUnit.AdminControllerTest.update" />
+      <item itemvalue="JUnit.AdminControllerTest" />
+      <item itemvalue="JUnit.AdminControllerTest.a_create" />
+      <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CputSecondHandBookApplication" />
-        <item itemvalue="JUnit.AdminControllerTest.update" />
-        <item itemvalue="JUnit.AdminControllerTest.create" />
-        <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
+        <item itemvalue="JUnit.AdminControllerTest.a_create" />
+        <item itemvalue="JUnit.AdminControllerTest" />
         <item itemvalue="JUnit.AdminControllerTest.getAll" />
+        <item itemvalue="JUnit.AdminControllerTest.testGetAdmin" />
       </list>
     </recent_temporary>
   </component>
@@ -292,6 +295,8 @@
       <workItem from="1569006852742" duration="11964000" />
       <workItem from="1569090920484" duration="8315000" />
       <workItem from="1569100449740" duration="32489000" />
+      <workItem from="1569795203438" duration="7337000" />
+      <workItem from="1570378555129" duration="3635000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>

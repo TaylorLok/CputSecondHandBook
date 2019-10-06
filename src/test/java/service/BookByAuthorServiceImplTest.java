@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import com.cput.ac.org.repository.BookByAuthorRepository;
-import com.cput.ac.org.repository.BookByAuthorRepositoryImpl;
 
 public class BookByAuthorServiceImplTest {
 

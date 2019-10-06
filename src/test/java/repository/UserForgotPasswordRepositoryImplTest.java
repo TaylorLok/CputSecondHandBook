@@ -3,7 +3,6 @@ package repository;
 import com.cput.ac.org.domain.UserForgotPassword;
 import com.cput.ac.org.factory.UserForgotPasswordFactory;
 import com.cput.ac.org.repository.UserForgotPasswordRepository;
-import com.cput.ac.org.repository.UserForgotPasswordRepositoryImpl;
 import org.junit.Before;
 import org.junit.Test;
 

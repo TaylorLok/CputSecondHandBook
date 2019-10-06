@@ -1,10 +1,8 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.ShortCourse;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface ShortCourseRepository extends IRepository<ShortCourse,String>
+public interface ShortCourseRepository extends JpaRepository<ShortCourse,String>
 {
-    Set<ShortCourse> getAll();
 }

@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import com.cput.ac.org.repository.AdminRepository;
-import com.cput.ac.org.repository.AdminRepositoryImpl;
 
 public class AdminServiceImplTest {
 

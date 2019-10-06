@@ -1,10 +1,8 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.BookByCourse;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface BookByCourseRepository extends IRepository<BookByCourse,String>
+public interface BookByCourseRepository extends JpaRepository<BookByCourse,String>
 {
-   Set<BookByCourse> getAll();
 }

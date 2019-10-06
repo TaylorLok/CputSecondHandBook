@@ -5,7 +5,6 @@ import com.cput.ac.org.factory.UserLoginFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import com.cput.ac.org.repository.UserLoginRepositoryImpl;
 
 public class UserLoginServiceImplTest
 {

@@ -3,7 +3,6 @@ package repository;
 import com.cput.ac.org.domain.BookByAuthor;
 import com.cput.ac.org.factory.BookByAuthorFactory;
 import com.cput.ac.org.repository.BookByAuthorRepository;
-import com.cput.ac.org.repository.BookByAuthorRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

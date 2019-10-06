@@ -3,7 +3,6 @@ package repository;
 import com.cput.ac.org.domain.SellerRating;
 import com.cput.ac.org.factory.SellerRatingFactory;
 import com.cput.ac.org.repository.SellerRatingRepository;
-import com.cput.ac.org.repository.SellerRatingRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

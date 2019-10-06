@@ -1,10 +1,9 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.UserForgotPassword;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface UserForgotPasswordRepository extends IRepository<UserForgotPassword,String>
+public interface UserForgotPasswordRepository extends JpaRepository<UserForgotPassword,String>
 {
-  Set<UserForgotPassword> getAll();
+
 }

@@ -1,10 +1,8 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.Comment;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface CommentRepository extends IRepository<Comment,String>
+public interface CommentRepository extends JpaRepository<Comment,String>
 {
-    Set<Comment> getAll();
 }

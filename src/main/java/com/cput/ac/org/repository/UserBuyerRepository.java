@@ -1,10 +1,9 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.UserBuyer;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface UserBuyerRepository extends IRepository<UserBuyer,String>
+public interface UserBuyerRepository extends JpaRepository<UserBuyer,String>
 {
-    Set<UserBuyer> getAll();
+
 }

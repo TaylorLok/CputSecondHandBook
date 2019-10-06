@@ -3,7 +3,6 @@ package repository;
 import com.cput.ac.org.domain.Admin;
 import com.cput.ac.org.factory.AdminFactory;
 import com.cput.ac.org.repository.AdminRepository;
-import com.cput.ac.org.repository.AdminRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

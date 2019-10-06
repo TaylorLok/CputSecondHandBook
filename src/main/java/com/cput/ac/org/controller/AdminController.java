@@ -18,7 +18,7 @@ public class AdminController
         this.service = service;
     }
 
-    @GetMapping(value="/Create/{adminPassword}")
+    @PostMapping (value="/Create/{adminPassword}")
     @ResponseBody
     public Admin create(Admin admin, @PathVariable String adminPassword)
     {

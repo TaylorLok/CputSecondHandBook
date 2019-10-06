@@ -1,10 +1,9 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.BookByAuthor;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface BookByAuthorRepository extends IRepository<BookByAuthor,String>
+public interface BookByAuthorRepository extends JpaRepository<BookByAuthor,String>
 {
-   Set<BookByAuthor> getAll();
+
 }

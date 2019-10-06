@@ -1,10 +1,9 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.UserLogin;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface UserLoginRepository extends IRepository<UserLogin,String>
+public interface UserLoginRepository extends JpaRepository<UserLogin,String>
 {
-    Set<UserLogin> getAll();
+
 }

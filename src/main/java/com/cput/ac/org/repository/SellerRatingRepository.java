@@ -1,10 +1,8 @@
 package com.cput.ac.org.repository;
 
 import com.cput.ac.org.domain.SellerRating;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Set;
-
-public interface SellerRatingRepository extends IRepository<SellerRating,String>
+public interface SellerRatingRepository extends JpaRepository<SellerRating,String>
 {
-    Set<SellerRating> getAll();
 }

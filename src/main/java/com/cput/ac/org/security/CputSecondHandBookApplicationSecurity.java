@@ -44,10 +44,8 @@ public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurer
                 .antMatchers(HttpMethod.GET,"/CputSecondHandBook/**/login/**").hasRole(ADMIN_ROLE)
                 .antMatchers(HttpMethod.POST,"CputSecondHandBook/create**").hasRole(ADMIN_ROLE)
                 .and()
-                .csrf()
-                .disable()
-                .formLogin()
-                .disable();
+                .formLogin();
+
 
 
     }

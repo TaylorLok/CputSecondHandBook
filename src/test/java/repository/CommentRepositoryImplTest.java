@@ -3,7 +3,6 @@ package repository;
 import com.cput.ac.org.domain.Comment;
 import com.cput.ac.org.factory.CommentFactory;
 import com.cput.ac.org.repository.CommentRepository;
-import com.cput.ac.org.repository.CommentRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

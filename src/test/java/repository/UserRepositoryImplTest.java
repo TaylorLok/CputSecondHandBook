@@ -3,7 +3,6 @@ package repository;
 import com.cput.ac.org.domain.User;
 import com.cput.ac.org.factory.UserFactory;
 import com.cput.ac.org.repository.UserRepository;
-import com.cput.ac.org.repository.UserRepositoryImpl;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
