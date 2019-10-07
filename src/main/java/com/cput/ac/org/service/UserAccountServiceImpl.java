@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserAccount;
+import com.cput.ac.org.repository.UserAccountRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,6 +25,9 @@ public class UserAccountServiceImpl implements UserAccountService
         return service;
 
     }
+
+    @Autowired
+    UserAccountRepository userAccountRepository;
 
     @Override
     public UserAccount create(UserAccount account)
@@ -54,10 +59,10 @@ public class UserAccountServiceImpl implements UserAccountService
     }
 
     @Override
-    public Set<UserAccount> getAll() {
-        Collection<UserAccount> useraccounts = this.useraccount.values();
+    public Set<UserAccount> getAll()
+    {
         Set<UserAccount> set = new HashSet<>();
-        set.addAll(useraccounts);
+        set.addAll(userAccountRepository.findAll());
         return set;
     }
 }

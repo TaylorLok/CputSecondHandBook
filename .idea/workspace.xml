@@ -6,19 +6,209 @@
   <component name="ChangeListManager">
     <list default="true" id="de256169-de76-4c80-9980-435e48ad6779" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/repository/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/repository/AdminRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/repository/AdminRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/CputSecondHandBookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/CputSecondHandBookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/AdvertiseBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/AdvertiseBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/BookByAuthor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/BookByAuthor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/BookByCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/BookByCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/BookByDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/BookByDepartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/SellerRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/SellerRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/ShortCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/ShortCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserBuyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserBuyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserDeregistration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserEmailVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserEmailVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserForgotLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserForgotPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserForgotPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserRating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserSeller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/domain/UserSeller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookByAuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookByAuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookByCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookByCourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookByDepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookByDepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/SellerRatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/SellerRatingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/ShortCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/ShortCourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserBuyerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserBuyerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserEmailVerificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserEmailVerificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserForgotPasswordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserForgotPasswordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserRegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserRegistrationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserSellerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserSellerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cput/ac/org/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Controller/AdminControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/AdminRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/AdminRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/AdminServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/AdminServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CputSecondHandBook.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/AdminRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/AdvertiseBookRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/BookByAuthorRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/BookByCourseRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/BookByDepartmentRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/BookRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/CommentRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/SellerRatingRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/ShortCourseRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserAccountRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserBuyerRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserForgotPasswordRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserLoginRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserRegistrationRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserSellerRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/userEmailVerificationRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/AdminServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/AdvertiseBookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/AdvertiseBookServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/BookByAuthorServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/BookByCourseServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/BookByDepartmentServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/BookServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/CommentServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/SellerRatingServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/ShortCourseServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserAccountServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserBuyerServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserEmailVerificationServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserForgotPasswordServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserLoginServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserRegistrationServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserSellerServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/CputSecondHandBookApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/CputSecondHandBookApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/AdvertiseBook$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/AdvertiseBook$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/AdvertiseBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/AdvertiseBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Book$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Book$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByAuthor$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByAuthor$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByAuthor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByAuthor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByCourse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByCourse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByDepartment$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByDepartment$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/BookByDepartment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Comment$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Comment$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/SellerRating$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/SellerRating$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/SellerRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/SellerRating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/ShortCourse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/ShortCourse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/ShortCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/ShortCourse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/User$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserAccount$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserAccount$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserBuyer$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserBuyer$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserBuyer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserBuyer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserDeregistration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserEmailVerification$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserEmailVerification$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserEmailVerification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserEmailVerification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserForgotLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserForgotPassword$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserForgotPassword$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserForgotPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserForgotPassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserLogin$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserLogin$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserRating.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserRegistration$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserRegistration$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserRegistration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserSeller$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserSeller$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserSeller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/Domain/UserSeller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/AdminRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/AdvertiseBookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/AdvertiseBookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/AdvertiseBookRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByAuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByAuthorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByAuthorRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByCourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByCourseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByCourseRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByDepartmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByDepartmentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookByDepartmentRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/BookRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/CommentRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/IRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/SellerRatingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/SellerRatingRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/SellerRatingRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/ShortCourseRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/ShortCourseRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/ShortCourseRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserAccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserAccountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserAccountRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserBuyerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserBuyerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserBuyerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserEmailVerificationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserEmailVerificationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserForgotPasswordRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserForgotPasswordRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserForgotPasswordRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserLoginRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserLoginRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserLoginRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserRegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserRegistrationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserRegistrationRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserSellerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserSellerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/UserSellerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/repository/userEmailVerificationRepositoryImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/CputSecondHandBookApplicationSecurity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Controller/AdminControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/security/MyWebApplicationInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookByAuthorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookByAuthorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookByCourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookByCourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookByDepartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookByDepartmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/SellerRatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/SellerRatingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/ShortCourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/ShortCourseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserAccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserAccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserBuyerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserBuyerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserEmailVerificationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserEmailVerificationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserForgotPasswordServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserForgotPasswordServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserLoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserRegistrationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserRegistrationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserSellerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserSellerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cput/ac/org/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/AdminRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/AdvertiseBookRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/BookByAuthorRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/BookByCourseRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/BookByDepartmentRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/BookRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/CommentRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/SellerRatingRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/ShortCourseRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserAccountRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserBuyerRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserForgotPasswordRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserLoginRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserRegistrationRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/UserSellerRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/repository/userEmailVerificationRepositoryImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/AdminServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/AdvertiseBookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/AdvertiseBookServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/BookByAuthorServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/BookByCourseServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/BookByDepartmentServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/BookServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/CommentServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/SellerRatingServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/ShortCourseServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserAccountServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserBuyerServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserEmailVerificationServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserForgotPasswordServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserLoginServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserRegistrationServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserSellerServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserServiceImplTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +486,7 @@
       <workItem from="1569090920484" duration="8315000" />
       <workItem from="1569100449740" duration="32489000" />
       <workItem from="1569795203438" duration="7337000" />
-      <workItem from="1570378555129" duration="3635000" />
+      <workItem from="1570378555129" duration="14706000" />
     </task>
     <task id="LOCAL-00001" summary="still going">
       <created>1555357481380</created>

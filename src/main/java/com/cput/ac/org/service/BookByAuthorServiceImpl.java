@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.BookByAuthor;
+import com.cput.ac.org.repository.BookByAuthorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,8 @@ public class BookByAuthorServiceImpl implements BookByAuthorService
 
     }
 
+    @Autowired
+    BookByAuthorRepository bookByAuthorRepository;
 
     @Override
     public BookByAuthor create(BookByAuthor bookAuthor)
@@ -55,10 +59,10 @@ public class BookByAuthorServiceImpl implements BookByAuthorService
     }
 
     @Override
-    public Set<BookByAuthor> getAll() {
-        Collection<BookByAuthor> byAuthors = this.authorMap.values();
+    public Set<BookByAuthor> getAll()
+    {
         Set<BookByAuthor> set = new HashSet<>();
-        set.addAll(byAuthors);
+        set.addAll(bookByAuthorRepository.findAll());
         return set;
     }
 }

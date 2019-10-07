@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.ShortCourse;
+import com.cput.ac.org.repository.ShortCourseRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,6 +25,9 @@ public class ShortCourseServiceImpl implements ShortCourseService
         return service;
 
     }
+
+    @Autowired
+    ShortCourseRepository shortCourseRepository;
 
     @Override
     public ShortCourse create(ShortCourse course)
@@ -59,9 +64,9 @@ public class ShortCourseServiceImpl implements ShortCourseService
 
     @Override
     public Set<ShortCourse> getAll() {
-        Collection<ShortCourse> shortcourses = this.shortcourse.values();
+
         Set<ShortCourse> set = new HashSet<>();
-        set.addAll(shortcourses);
+        set.addAll(shortCourseRepository.findAll());
         return set;
     }
 }

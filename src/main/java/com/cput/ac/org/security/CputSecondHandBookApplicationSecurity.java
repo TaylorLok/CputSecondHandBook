@@ -27,11 +27,11 @@ public class CputSecondHandBookApplicationSecurity extends WebSecurityConfigurer
     {
         auth . inMemoryAuthentication()
                 .withUser("user")
-                .password(encoder().encode("lokombe"))
+                .password(encoder().encode("user"))
                 .roles("USER_ROLE")
                 .and()
                 .withUser("admin")
-                .password(encoder().encode("taylor"))
+                .password(encoder().encode("admin"))
                 .roles(USER_ROLE,ADMIN_ROLE);
    }
 

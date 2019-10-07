@@ -2,8 +2,10 @@ package com.cput.ac.org.domain;
 
 import com.cput.ac.org.factory.IBookFactory;
 
+import javax.persistence.Entity;
 import java.util.Map;
 
+@Entity
 public class Book implements IBookFactory
 {
 

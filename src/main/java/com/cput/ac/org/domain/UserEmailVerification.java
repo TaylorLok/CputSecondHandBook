@@ -1,8 +1,13 @@
 package com.cput.ac.org.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class UserEmailVerification
 {
     private String userName;
+    @Id
     private String studentNumber;
     private String email;
     private String verificationCode;

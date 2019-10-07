@@ -2,12 +2,13 @@ package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserForgotPassword;
 import com.cput.ac.org.repository.UserForgotPasswordRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 @Service("UserForgotPasswordServiceImpl")
-public class UserForgotPasswordServiceImpl implements UserForgotPasswordRepository
+public class UserForgotPasswordServiceImpl implements UserForgotPasswordService
 {
     private static UserForgotPasswordServiceImpl service = null;
     private Map<String,UserForgotPassword > userForgotPassword;
@@ -25,6 +26,8 @@ public class UserForgotPasswordServiceImpl implements UserForgotPasswordReposito
 
     }
 
+    @Autowired
+    UserForgotPasswordRepository userForgotPasswordRepository;
 
     @Override
     public UserForgotPassword create(UserForgotPassword userForgotp)
@@ -58,9 +61,8 @@ public class UserForgotPasswordServiceImpl implements UserForgotPasswordReposito
     @Override
     public Set<UserForgotPassword> getAll()
     {
-        Collection<UserForgotPassword> userForgotPasswords = this.userForgotPassword.values();
         Set<UserForgotPassword> set = new HashSet<>();
-        set.addAll(userForgotPasswords);
+        set.addAll(userForgotPasswordRepository.findAll());
         return set;
     }
 }

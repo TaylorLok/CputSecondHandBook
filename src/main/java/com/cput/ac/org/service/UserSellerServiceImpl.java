@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserSeller;
+import com.cput.ac.org.repository.UserSellerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,6 +25,9 @@ public class UserSellerServiceImpl implements UserSellerService
         return service;
 
     }
+
+    @Autowired
+    UserSellerRepository userSellerRepository;
 
 
     @Override
@@ -71,9 +76,8 @@ public class UserSellerServiceImpl implements UserSellerService
     @Override
     public Set<UserSeller> getAll()
     {
-        Collection<UserSeller> sellers = this.userSeller.values();
         Set<UserSeller> set = new HashSet<>();
-        set.addAll(sellers);
+        set.addAll(userSellerRepository.findAll());
         return set;
     }
 }

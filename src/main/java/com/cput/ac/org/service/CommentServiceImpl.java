@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.Comment;
+import com.cput.ac.org.repository.CommentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,6 +25,9 @@ public class CommentServiceImpl implements CommentService
         return service;
 
     }
+
+    @Autowired
+    CommentRepository commentRepository;
 
     @Override
     public Comment create(Comment comment)
@@ -56,9 +61,8 @@ public class CommentServiceImpl implements CommentService
     @Override
     public Set<Comment> getAll()
     {
-        Collection<Comment> comments = this.usercomment.values();
         Set<Comment> set = new HashSet<>();
-        set.addAll(comments);
+        set.addAll(commentRepository.findAll());
         return set;
     }
 }

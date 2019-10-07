@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.Admin;
+import com.cput.ac.org.repository.AdminRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,8 @@ public class AdminServiceImpl implements AdminService
 
     }
 
+    @Autowired
+    AdminRepository adminRepository;
 
     public Admin create(Admin admin)
     {
@@ -61,9 +65,8 @@ public class AdminServiceImpl implements AdminService
 
     public Set<Admin> getAll()
     {
-        Collection<Admin> admins = this.adminMap.values();
         Set<Admin> set = new HashSet<>();
-        set.addAll(admins);
+        set.addAll(adminRepository.findAll());
         return set;
     }
 }

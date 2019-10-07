@@ -1,5 +1,8 @@
 package com.cput.ac.org.domain;
 
+import javax.persistence.Entity;
+
+@Entity
 public class BookByAuthor extends Book
 {
     private String name;

@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserEmailVerification;
+import com.cput.ac.org.repository.UserEmailVerificationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,8 @@ public class UserEmailVerificationServiceImpl implements UserEmailVerificationSe
 
     }
 
+    @Autowired
+    UserEmailVerificationRepository userEmailVerificationRepository;
 
     @Override
     public UserEmailVerification create(UserEmailVerification emailver)
@@ -59,10 +63,10 @@ public class UserEmailVerificationServiceImpl implements UserEmailVerificationSe
     }
 
     @Override
-    public Set<UserEmailVerification> getAll() {
-        Collection<UserEmailVerification> userverify = this.email.values();
+    public Set<UserEmailVerification> getAll()
+    {
         Set<UserEmailVerification> set = new HashSet<>();
-        set.addAll(userverify);
+        set.addAll(userEmailVerificationRepository.findAll());
         return set;
     }
 }

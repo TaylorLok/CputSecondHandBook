@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.SellerRating;
+import com.cput.ac.org.repository.SellerRatingRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,8 @@ public class SellerRatingServiceImpl implements SellerRatingService
 
     }
 
+    @Autowired
+    SellerRatingRepository sellerRatingRepository;
 
     @Override
     public SellerRating create(SellerRating sell)
@@ -61,9 +65,8 @@ public class SellerRatingServiceImpl implements SellerRatingService
     @Override
     public Set<SellerRating> getAll()
     {
-        Collection<SellerRating> sellerRatings = this.rating.values();
         Set<SellerRating> set = new HashSet<>();
-        set.addAll(sellerRatings);
+        set.addAll(sellerRatingRepository.findAll());
         return set;
     }
 }

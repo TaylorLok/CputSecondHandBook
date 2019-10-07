@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserRegistration;
+import com.cput.ac.org.repository.UserRegistrationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,8 @@ public class UserRegistrationServiceImpl implements UserRegistrationService
 
     }
 
+    @Autowired
+    UserRegistrationRepository userRegistrationRepository;
 
     @Override
     public UserRegistration create(UserRegistration reg)
@@ -61,10 +65,10 @@ public class UserRegistrationServiceImpl implements UserRegistrationService
     }
 
     @Override
-    public Set<UserRegistration> getAll() {
-        Collection<UserRegistration> registrationCollection = this.registration.values();
+    public Set<UserRegistration> getAll()
+    {
         Set<UserRegistration> set = new HashSet<>();
-        set.addAll(registrationCollection);
+        set.addAll(userRegistrationRepository.findAll());
         return set;
     }
 }

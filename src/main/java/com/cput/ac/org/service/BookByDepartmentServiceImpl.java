@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.BookByDepartment;
+import com.cput.ac.org.repository.BookByDepartmentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -23,6 +25,9 @@ public class BookByDepartmentServiceImpl implements BookByDepartmentService
         return service;
 
     }
+
+    @Autowired
+    BookByDepartmentRepository bookByDepartmentRepository;
 
 
     @Override
@@ -62,10 +67,10 @@ public class BookByDepartmentServiceImpl implements BookByDepartmentService
     }
 
     @Override
-    public Set<BookByDepartment> getAll() {
-        Collection<BookByDepartment> bookdepartment = this.departmentMap.values();
+    public Set<BookByDepartment> getAll()
+    {
         Set<BookByDepartment> set = new HashSet<>();
-        set.addAll(bookdepartment);
+        set.addAll(bookByDepartmentRepository.findAll());
         return set;
     }
 }

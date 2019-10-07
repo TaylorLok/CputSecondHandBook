@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.Book;
+import com.cput.ac.org.repository.BookRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -22,6 +24,9 @@ public class BookServiceImpl implements BookService
         return service;
 
     }
+
+    @Autowired
+    BookRepository bookRepository;
 
 
     public Book create(Book book)
@@ -65,9 +70,8 @@ public class BookServiceImpl implements BookService
 
     public Set<Book> getAll()
     {
-        Collection<Book> book = this.book.values();
         Set<Book> set = new HashSet<>();
-        set.addAll(book);
+        set.addAll(bookRepository.findAll());
         return set;
     }
 

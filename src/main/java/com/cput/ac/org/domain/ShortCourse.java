@@ -1,5 +1,8 @@
 package com.cput.ac.org.domain;
 
+import javax.persistence.Entity;
+
+@Entity
 public class ShortCourse extends BookByCourse
 {
     private String ccna1;

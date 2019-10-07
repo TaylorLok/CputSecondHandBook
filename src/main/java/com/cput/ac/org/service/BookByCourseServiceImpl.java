@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.BookByCourse;
+import com.cput.ac.org.repository.BookByCourseRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,9 @@ public class BookByCourseServiceImpl implements BookByCourseService
         return service;
 
     }
+
+    @Autowired
+    BookByCourseRepository bookByCourseRepository;
 
     @Override
     public BookByCourse create(BookByCourse bookCourse)
@@ -63,9 +68,8 @@ public class BookByCourseServiceImpl implements BookByCourseService
     @Override
     public Set<BookByCourse> getAll()
     {
-        Collection<BookByCourse> bookByCourses = this.books.values();
         Set<BookByCourse> set = new HashSet<>();
-        set.addAll(bookByCourses);
+        set.addAll(bookByCourseRepository.findAll());
         return set;
     }
 }

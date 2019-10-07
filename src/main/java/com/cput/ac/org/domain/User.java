@@ -1,10 +1,14 @@
 package com.cput.ac.org.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class User implements IUser
 {
 
     private String name;
     private String surname;
+    @Id
     private String studentNumber;
     private String telNumber;
 

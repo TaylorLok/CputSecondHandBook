@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserLogin;
+import com.cput.ac.org.repository.UserLoginRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,9 @@ public class UserLoginServiceImpl implements UserLoginService
         return service;
 
     }
+
+    @Autowired
+    UserLoginRepository userLoginRepository;
 
     @Override
     public UserLogin create(UserLogin login)
@@ -57,9 +62,8 @@ public class UserLoginServiceImpl implements UserLoginService
 
     @Override
     public Set<UserLogin> getAll() {
-        Collection<UserLogin> logins = this.userLogin.values();
         Set<UserLogin> set = new HashSet<>();
-        set.addAll(logins);
+        set.addAll(userLoginRepository.findAll());
         return set;
     }
 }

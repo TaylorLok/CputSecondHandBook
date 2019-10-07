@@ -1,10 +1,10 @@
 package com.cput.ac.org.domain;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
+import javax.persistence.Entity;
 import java.util.Objects;
 
-@EntityScan
+
+@Entity
 public class Admin implements Manage
 {
 

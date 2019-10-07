@@ -1,6 +1,8 @@
 package com.cput.ac.org.service;
 
 import com.cput.ac.org.domain.UserBuyer;
+import com.cput.ac.org.repository.UserBuyerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -24,6 +26,8 @@ public class UserBuyerServiceImpl implements UserBuyerService
 
     }
 
+    @Autowired
+    UserBuyerRepository userBuyerRepository;
 
     @Override
     public UserBuyer create(UserBuyer buyer)
@@ -57,10 +61,10 @@ public class UserBuyerServiceImpl implements UserBuyerService
     }
 
     @Override
-    public Set<UserBuyer> getAll() {
-        Collection<UserBuyer> buyerCollection = this.buyerMap.values();
+    public Set<UserBuyer> getAll()
+    {
         Set<UserBuyer> set = new HashSet<>();
-        set.addAll(buyerCollection);
+        set.addAll(userBuyerRepository.findAll());
         return set;
     }
 
